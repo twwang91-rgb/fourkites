@@ -1,0 +1,29 @@
+{
+  "labels": [
+    "shipment_information",
+    "realtime_query",
+    "analytics",
+    "disruptions",
+    "chitchat",
+    "knowledge_base",
+    "other"
+  ],
+  "label2id": {
+    "shipment_information": 0,
+    "realtime_query": 1,
+    "analytics": 2,
+    "disruptions": 3,
+    "chitchat": 4,
+    "knowledge_base": 5,
+    "other": 6
+  },
+  "id2label": {
+    "0": "shipment_information",
+    "1": "realtime_query",
+    "2": "analytics",
+    "3": "disruptions",
+    "4": "chitchat",
+    "5": "knowledge_base",
+    "6": "other"
+  }
+}

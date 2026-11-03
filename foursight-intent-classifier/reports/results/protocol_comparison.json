@@ -1,0 +1,545 @@
+{
+ "rows": [
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.629159854843444,
+   "stratified": 0.6377383806366661,
+   "inflation": 0.008578525793222047
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.6269535959442472,
+   "stratified": 0.6297019806971945,
+   "inflation": 0.0027483847529473637
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.6268139037213286,
+   "stratified": 0.6434124916386499,
+   "inflation": 0.016598587917321272
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.6093697523932877,
+   "stratified": 0.6068476037793492,
+   "inflation": -0.002522148613938513
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.6004053761978093,
+   "stratified": 0.6160480911027512,
+   "inflation": 0.015642714904941846
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.5910731477146691,
+   "stratified": 0.6063318433064284,
+   "inflation": 0.015258695591759297
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=8.0,cw=None)",
+   "grouped": 0.5850795823574599,
+   "stratified": 0.5977080577515582,
+   "inflation": 0.012628475394098282
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5838129519180018,
+   "stratified": 0.5787688921481693,
+   "inflation": -0.005044059769832465
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.5797763519284709,
+   "stratified": 0.634779648039848,
+   "inflation": 0.05500329611137711
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.5777301373365633,
+   "stratified": 0.6348499876021986,
+   "inflation": 0.057119850265635264
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.5769576526306779,
+   "stratified": 0.6004618442985994,
+   "inflation": 0.023504191667921503
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.5768083341128463,
+   "stratified": 0.5903796414151066,
+   "inflation": 0.013571307302260305
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.574807685279608,
+   "stratified": 0.6275289217129663,
+   "inflation": 0.05272123643335824
+  },
+  {
+   "model": "tfidf[char]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.5742927746850277,
+   "stratified": 0.6226762091821962,
+   "inflation": 0.04838343449716853
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.5736183426020316,
+   "stratified": 0.6334339787372096,
+   "inflation": 0.05981563613517804
+  },
+  {
+   "model": "tfidf[char]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.5729481665395428,
+   "stratified": 0.6218551781668006,
+   "inflation": 0.048907011627257746
+  },
+  {
+   "model": "tfidf[char]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.5728802944950407,
+   "stratified": 0.619991360730862,
+   "inflation": 0.047111066235821286
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=4.0,cw=None)",
+   "grouped": 0.5727921324645648,
+   "stratified": 0.5808484519576245,
+   "inflation": 0.008056319493059627
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.5723509764978376,
+   "stratified": 0.593999106759049,
+   "inflation": 0.021648130261211374
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.5713883264658028,
+   "stratified": 0.5986105889829592,
+   "inflation": 0.027222262517156315
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5682211236270662,
+   "stratified": 0.566072680055774,
+   "inflation": -0.00214844357129218
+  },
+  {
+   "model": "tfidf[char]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.5672825533012045,
+   "stratified": 0.6238498214058108,
+   "inflation": 0.05656726810460633
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5647590561193009,
+   "stratified": 0.6167537431917636,
+   "inflation": 0.051994687072462686
+  },
+  {
+   "model": "tfidf[char]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5584489235337058,
+   "stratified": 0.6100670279796905,
+   "inflation": 0.05161810444598469
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.5557812640043177,
+   "stratified": 0.5847338020318285,
+   "inflation": 0.028952538027510744
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.5512590341584735,
+   "stratified": 0.5675594198321969,
+   "inflation": 0.016300385673723383
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=0.5,cw=None)",
+   "grouped": 0.5511718515469737,
+   "stratified": 0.6186446990038473,
+   "inflation": 0.06747284745687365
+  },
+  {
+   "model": "tfidf[word]+logreg(C=4.0,cw=balanced)",
+   "grouped": 0.5500829110106098,
+   "stratified": 0.5956818583858035,
+   "inflation": 0.045598947375193655
+  },
+  {
+   "model": "tfidf[word]+logreg(C=8.0,cw=balanced)",
+   "grouped": 0.5494186219808991,
+   "stratified": 0.5965252856952667,
+   "inflation": 0.04710666371436767
+  },
+  {
+   "model": "tfidf[char]+svm(C=2.0,cw=balanced)",
+   "grouped": 0.5478544002401255,
+   "stratified": 0.6086687074448043,
+   "inflation": 0.06081430720467873
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=1.0,cw=None)",
+   "grouped": 0.5477480940151292,
+   "stratified": 0.6148394953641478,
+   "inflation": 0.06709140134901859
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=8.0,cw=None)",
+   "grouped": 0.546998225648562,
+   "stratified": 0.6092908915485924,
+   "inflation": 0.06229266590003035
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=2.0,cw=None)",
+   "grouped": 0.5463440685994052,
+   "stratified": 0.6141538268249844,
+   "inflation": 0.06780975822557922
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=4.0,cw=None)",
+   "grouped": 0.5454389916818126,
+   "stratified": 0.6126067922632148,
+   "inflation": 0.06716780058140215
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=8.0,cw=None)",
+   "grouped": 0.5447670309208457,
+   "stratified": 0.6157400830507818,
+   "inflation": 0.0709730521299361
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=1.0,cw=balanced)",
+   "grouped": 0.5444858541202544,
+   "stratified": 0.6114549031008615,
+   "inflation": 0.06696904898060707
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=4.0,cw=balanced)",
+   "grouped": 0.5438194574991457,
+   "stratified": 0.6099448509582174,
+   "inflation": 0.06612539345907165
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=8.0,cw=balanced)",
+   "grouped": 0.5430630433219223,
+   "stratified": 0.6115120899533443,
+   "inflation": 0.06844904663142193
+  },
+  {
+   "model": "tfidf[char]+svm(C=4.0,cw=balanced)",
+   "grouped": 0.5429147632228921,
+   "stratified": 0.6106625996720978,
+   "inflation": 0.06774783644920568
+  },
+  {
+   "model": "tfidf[word]+logreg(C=2.0,cw=balanced)",
+   "grouped": 0.542772846644173,
+   "stratified": 0.5958512651315809,
+   "inflation": 0.05307841848740791
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=2.0,cw=balanced)",
+   "grouped": 0.5422679899662902,
+   "stratified": 0.6139641287826103,
+   "inflation": 0.07169613881632009
+  },
+  {
+   "model": "tfidf[word+char]+svm(C=0.5,cw=balanced)",
+   "grouped": 0.5420480561083358,
+   "stratified": 0.6128401123206686,
+   "inflation": 0.07079205621233275
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=4.0,cw=None)",
+   "grouped": 0.5410787485544587,
+   "stratified": 0.5974033624439046,
+   "inflation": 0.056324613889445874
+  },
+  {
+   "model": "tfidf[char]+svm(C=0.5,cw=None)",
+   "grouped": 0.540132768549995,
+   "stratified": 0.6139524223064092,
+   "inflation": 0.0738196537564142
+  },
+  {
+   "model": "tfidf[word]+logreg(C=1.0,cw=balanced)",
+   "grouped": 0.5398422522377788,
+   "stratified": 0.5901560119591194,
+   "inflation": 0.050313759721340556
+  },
+  {
+   "model": "tfidf[char]+svm(C=0.5,cw=balanced)",
+   "grouped": 0.5393617752163203,
+   "stratified": 0.6138096468265686,
+   "inflation": 0.07444787161024824
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=4.0,cw=None)",
+   "grouped": 0.5388934003758536,
+   "stratified": 0.6049139757106008,
+   "inflation": 0.06602057533474714
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=8.0,cw=None)",
+   "grouped": 0.5384511755157537,
+   "stratified": 0.60301329340036,
+   "inflation": 0.06456211788460631
+  },
+  {
+   "model": "tfidf[char]+logreg(C=8.0,cw=None)",
+   "grouped": 0.5384167726909397,
+   "stratified": 0.6106714590165501,
+   "inflation": 0.07225468632561038
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=8.0,cw=None)",
+   "grouped": 0.5381550547652632,
+   "stratified": 0.6164648488647577,
+   "inflation": 0.07830979409949457
+  },
+  {
+   "model": "tfidf[char]+svm(C=1.0,cw=balanced)",
+   "grouped": 0.537444181735951,
+   "stratified": 0.6146870656137566,
+   "inflation": 0.07724288387780565
+  },
+  {
+   "model": "tfidf[char]+svm(C=1.0,cw=None)",
+   "grouped": 0.5368475807810642,
+   "stratified": 0.6140970437527968,
+   "inflation": 0.07724946297173263
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5366321955337041,
+   "stratified": 0.5524285816992411,
+   "inflation": 0.015796386165537024
+  },
+  {
+   "model": "tfidf[char]+svm(C=8.0,cw=None)",
+   "grouped": 0.5340239355310945,
+   "stratified": 0.606933966844303,
+   "inflation": 0.0729100313132085
+  },
+  {
+   "model": "tfidf[char]+svm(C=2.0,cw=None)",
+   "grouped": 0.5327374772732584,
+   "stratified": 0.6155048301135618,
+   "inflation": 0.08276735284030345
+  },
+  {
+   "model": "tfidf[word]+svm(C=2.0,cw=None)",
+   "grouped": 0.5312773209687875,
+   "stratified": 0.606638967608782,
+   "inflation": 0.07536164663999445
+  },
+  {
+   "model": "tfidf[word]+svm(C=4.0,cw=None)",
+   "grouped": 0.5304078084188597,
+   "stratified": 0.6036821147630909,
+   "inflation": 0.07327430634423115
+  },
+  {
+   "model": "tfidf[word]+svm(C=0.5,cw=None)",
+   "grouped": 0.5300918664185899,
+   "stratified": 0.6047238164848119,
+   "inflation": 0.07463195006622203
+  },
+  {
+   "model": "tfidf[char]+svm(C=8.0,cw=balanced)",
+   "grouped": 0.5298197120336253,
+   "stratified": 0.6060103654953956,
+   "inflation": 0.07619065346177023
+  },
+  {
+   "model": "tfidf[word]+svm(C=4.0,cw=balanced)",
+   "grouped": 0.5289905786516507,
+   "stratified": 0.5970344613611565,
+   "inflation": 0.06804388270950579
+  },
+  {
+   "model": "tfidf[word]+svm(C=8.0,cw=balanced)",
+   "grouped": 0.5288700291691998,
+   "stratified": 0.6010242492802991,
+   "inflation": 0.07215422011109929
+  },
+  {
+   "model": "tfidf[word]+svm(C=8.0,cw=None)",
+   "grouped": 0.5285504761207545,
+   "stratified": 0.6053622294372185,
+   "inflation": 0.07681175331646406
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=2.0,cw=None)",
+   "grouped": 0.528468857471218,
+   "stratified": 0.5660754905772057,
+   "inflation": 0.037606633105987775
+  },
+  {
+   "model": "tfidf[word]+svm(C=1.0,cw=None)",
+   "grouped": 0.5280759436736864,
+   "stratified": 0.6058455613294544,
+   "inflation": 0.07776961765576806
+  },
+  {
+   "model": "tfidf[word]+logreg(C=0.5,cw=balanced)",
+   "grouped": 0.5268211741096699,
+   "stratified": 0.58335252629045,
+   "inflation": 0.05653135218078009
+  },
+  {
+   "model": "tfidf[char]+svm(C=4.0,cw=None)",
+   "grouped": 0.5265757100196762,
+   "stratified": 0.6127288389902241,
+   "inflation": 0.08615312897054794
+  },
+  {
+   "model": "tfidf[char]+logreg(C=4.0,cw=None)",
+   "grouped": 0.5264002250815225,
+   "stratified": 0.5943090527620495,
+   "inflation": 0.06790882768052697
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=2.0,cw=None)",
+   "grouped": 0.525545124878757,
+   "stratified": 0.5847598695087575,
+   "inflation": 0.05921474463000043
+  },
+  {
+   "model": "tfidf[word]+svm(C=1.0,cw=balanced)",
+   "grouped": 0.5249487863280315,
+   "stratified": 0.6030062299738219,
+   "inflation": 0.07805744364579037
+  },
+  {
+   "model": "tfidf[word]+svm(C=2.0,cw=balanced)",
+   "grouped": 0.524160483710935,
+   "stratified": 0.5989377127255665,
+   "inflation": 0.07477722901463146
+  },
+  {
+   "model": "tfidf[word]+svm(C=0.5,cw=balanced)",
+   "grouped": 0.5208264062605745,
+   "stratified": 0.6010425600368456,
+   "inflation": 0.08021615377627112
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=2.0,cw=None)",
+   "grouped": 0.5194389221245942,
+   "stratified": 0.5625735033872885,
+   "inflation": 0.043134581262694316
+  },
+  {
+   "model": "tfidf[word]+logreg(C=8.0,cw=None)",
+   "grouped": 0.5144033727271364,
+   "stratified": 0.5800204805371374,
+   "inflation": 0.06561710781000096
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=1.0,cw=None)",
+   "grouped": 0.5104221168874179,
+   "stratified": 0.5402472537856572,
+   "inflation": 0.02982513689823929
+  },
+  {
+   "model": "tfidf[char]+logreg(C=2.0,cw=None)",
+   "grouped": 0.5040500487137153,
+   "stratified": 0.5529661345752466,
+   "inflation": 0.04891608586153129
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=4.0,cw=None)",
+   "grouped": 0.5035289971270609,
+   "stratified": 0.5229433861404742,
+   "inflation": 0.019414389013413302
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=1.0,cw=None)",
+   "grouped": 0.5028924754124366,
+   "stratified": 0.5513825274500983,
+   "inflation": 0.04849005203766166
+  },
+  {
+   "model": "tfidf[word]+logreg(C=4.0,cw=None)",
+   "grouped": 0.49855653767190794,
+   "stratified": 0.575203635455733,
+   "inflation": 0.07664709778382511
+  },
+  {
+   "model": "tfidf[char]+logreg(C=1.0,cw=None)",
+   "grouped": 0.48510864517439245,
+   "stratified": 0.5055961558286155,
+   "inflation": 0.02048751065422305
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=2.0,cw=None)",
+   "grouped": 0.4774804357171497,
+   "stratified": 0.4765021713709336,
+   "inflation": -0.0009782643462161178
+  },
+  {
+   "model": "tfidf[word]+logreg(C=2.0,cw=None)",
+   "grouped": 0.4770960339665466,
+   "stratified": 0.5287154963655429,
+   "inflation": 0.05161946239899634
+  },
+  {
+   "model": "tfidf[word+char]+logreg(C=0.5,cw=None)",
+   "grouped": 0.4769829505859605,
+   "stratified": 0.4936235074869989,
+   "inflation": 0.016640556901038384
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=1.0,cw=None)",
+   "grouped": 0.46936075742637506,
+   "stratified": 0.47589433645244295,
+   "inflation": 0.006533579026067882
+  },
+  {
+   "model": "emb[all-MiniLM-L6-v2]+logreg(C=0.5,cw=None)",
+   "grouped": 0.46410627457728626,
+   "stratified": 0.4673606412970898,
+   "inflation": 0.0032543667198035586
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=1.0,cw=None)",
+   "grouped": 0.4482719624664383,
+   "stratified": 0.4551235578156829,
+   "inflation": 0.006851595349244621
+  },
+  {
+   "model": "emb[bge-small-en-v1.5]+logreg(C=0.5,cw=None)",
+   "grouped": 0.4449701215354672,
+   "stratified": 0.44781423580691904,
+   "inflation": 0.002844114271451814
+  },
+  {
+   "model": "tfidf[word]+logreg(C=1.0,cw=None)",
+   "grouped": 0.4424782317585821,
+   "stratified": 0.4552061375463434,
+   "inflation": 0.01272790578776134
+  },
+  {
+   "model": "tfidf[char]+logreg(C=0.5,cw=None)",
+   "grouped": 0.4338591290013846,
+   "stratified": 0.4404642747969501,
+   "inflation": 0.006605145795565481
+  },
+  {
+   "model": "emb[multilingual-e5-small]+logreg(C=0.5,cw=None)",
+   "grouped": 0.41805684072303306,
+   "stratified": 0.4196822564438516,
+   "inflation": 0.001625415720818535
+  },
+  {
+   "model": "tfidf[word]+logreg(C=0.5,cw=None)",
+   "grouped": 0.39124507400627195,
+   "stratified": 0.40149834023190006,
+   "inflation": 0.01025326622562811
+  }
+ ],
+ "mean_inflation": 0.046873940883513356
+}

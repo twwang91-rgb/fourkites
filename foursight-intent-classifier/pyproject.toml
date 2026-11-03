@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foursight-intent"
+version = "0.1.0"
+description = "Deterministic intent classifier for the FourKites FourSight assistant (take-home challenge)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "scipy>=1.11",
+    "torch>=2.3",
+    "transformers>=4.44",
+    "tokenizers>=0.19",
+    "sentencepiece>=0.2",
+    "protobuf>=4",
+    "sentence-transformers>=3.0",
+    "safetensors>=0.4",
+    "huggingface_hub>=0.24",
+    "pyyaml>=6",
+    "tqdm>=4.66",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "wandb>=0.17", "reportlab>=4.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]

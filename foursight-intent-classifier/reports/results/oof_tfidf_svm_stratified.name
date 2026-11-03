@@ -1,0 +1,1 @@
+tfidf[word+char]+svm(C=0.5,cw=None)

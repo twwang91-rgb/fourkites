@@ -1,0 +1,1150 @@
+{
+  "n_train": 1904,
+  "n_test": 566,
+  "class_counts": {
+    "shipment_information": 256,
+    "realtime_query": 782,
+    "analytics": 257,
+    "disruptions": 28,
+    "chitchat": 17,
+    "knowledge_base": 509,
+    "other": 55
+  },
+  "class_fraction": {
+    "shipment_information": 0.1345,
+    "realtime_query": 0.4107,
+    "analytics": 0.135,
+    "disruptions": 0.0147,
+    "chitchat": 0.0089,
+    "knowledge_base": 0.2673,
+    "other": 0.0289
+  },
+  "imbalance_ratio_max_min": 46.0,
+  "train_length": {
+    "words_mean": 14.439600840336135,
+    "words_median": 8.0,
+    "words_p95": 28.84999999999991,
+    "words_max": 1533,
+    "chars_median": 47.0,
+    "chars_max": 11329,
+    "pct_rows_le_3_words": 0.15231092436974789,
+    "pct_rows_gt_128_words": 0.008403361344537815,
+    "multiline_rows": 176
+  },
+  "test_length": {
+    "words_mean": 13.614840989399294,
+    "words_median": 8.0,
+    "words_p95": 28.0,
+    "words_max": 1247,
+    "chars_median": 48.0,
+    "chars_max": 7722,
+    "pct_rows_le_3_words": 0.15547703180212014,
+    "pct_rows_gt_128_words": 0.0017667844522968198,
+    "multiline_rows": 13
+  },
+  "words_per_class": {
+    "shipment_information": {
+      "mean": 13.88,
+      "median": 7.0,
+      "max": 450
+    },
+    "realtime_query": {
+      "mean": 10.73,
+      "median": 7.0,
+      "max": 404
+    },
+    "analytics": {
+      "mean": 35.15,
+      "median": 13.0,
+      "max": 1533
+    },
+    "disruptions": {
+      "mean": 11.32,
+      "median": 9.5,
+      "max": 26
+    },
+    "chitchat": {
+      "mean": 4.24,
+      "median": 2.0,
+      "max": 20
+    },
+    "knowledge_base": {
+      "mean": 11.19,
+      "median": 9.0,
+      "max": 61
+    },
+    "other": {
+      "mean": 7.89,
+      "median": 5.0,
+      "max": 40
+    }
+  },
+  "duplicates": {
+    "exact_duplicate_groups": 165,
+    "rows_in_duplicate_groups": 379,
+    "conflicting_label_groups": 37,
+    "rows_in_conflicting_groups": 81,
+    "conflict_examples": [
+      {
+        "question": "4385338688",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "56910268",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "are you able to get me a list of currently active inbound international shipments that are going thr",
+        "labels": {
+          "realtime_query": 3,
+          "shipment_information": 1
+        }
+      },
+      {
+        "question": "both",
+        "labels": {
+          "other": 1,
+          "realtime_query": 3
+        }
+      },
+      {
+        "question": "can you please show only the loads with inbound tags",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "can you show me all of the shipments i have listed for jan 30 2026",
+        "labels": {
+          "analytics": 1,
+          "shipment_information": 1
+        }
+      },
+      {
+        "question": "cma bex is there any benchmark on transit time",
+        "labels": {
+          "other": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "como passar isso pra transportadora",
+        "labels": {
+          "other": 1,
+          "knowledge_base": 1
+        }
+      },
+      {
+        "question": "currently in bound or scheduled to deliver today and tomorrow only",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "en este viajes puedes estimar la velocidad que ira la unidad",
+        "labels": {
+          "shipment_information": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "eta",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "how do i make it to be only 1 contract",
+        "labels": {
+          "other": 1,
+          "knowledge_base": 1
+        }
+      },
+      {
+        "question": "i mean being delivered to our facility today",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "i would like to have all of the updates on this load please tell me where it s at and the expected d",
+        "labels": {
+          "realtime_query": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "is this only for admins",
+        "labels": {
+          "other": 1,
+          "knowledge_base": 1
+        }
+      },
+      {
+        "question": "me refiero solo al bs20260723 1235 tiene o pasara poe algun punto de riesgo",
+        "labels": {
+          "realtime_query": 1,
+          "disruptions": 1
+        }
+      },
+      {
+        "question": "over the road tl freight in na",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "purchasing document status 4507125913",
+        "labels": {
+          "other": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "scheduled",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "shipment # status weight carrier and other features",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "show me picked loads",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "sou1001399023",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "the route of bs20260723 1235 have montain regions with curves",
+        "labels": {
+          "realtime_query": 1,
+          "disruptions": 1
+        }
+      },
+      {
+        "question": "tiempos y riesgo",
+        "labels": {
+          "analytics": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "tms shipment id joined po rdd eta at pod eta from fourkites eta at pod vs rdd actual arrival at pod ",
+        "labels": {
+          "shipment_information": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "tms shipment id order creation date eta at pod booking # container # carrier 2066785108 2026 07 06 2",
+        "labels": {
+          "shipment_information": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "what do we have coming in today",
+        "labels": {
+          "realtime_query": 1,
+          "shipment_information": 1
+        }
+      },
+      {
+        "question": "what is termination date",
+        "labels": {
+          "other": 1,
+          "knowledge_base": 1
+        }
+      },
+      {
+        "question": "what shipments is port hawkesbury nova scotia getting aug 8 2026",
+        "labels": {
+          "analytics": 1,
+          "shipment_information": 1
+        }
+      },
+      {
+        "question": "what was the late",
+        "labels": {
+          "other": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "what was the late load",
+        "labels": {
+          "shipment_information": 1,
+          "analytics": 1
+        }
+      },
+      {
+        "question": "where can i review these metrics",
+        "labels": {
+          "analytics": 1,
+          "knowledge_base": 1
+        }
+      },
+      {
+        "question": "which carriers has the most loads late today",
+        "labels": {
+          "analytics": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "yes",
+        "labels": {
+          "shipment_information": 3,
+          "realtime_query": 2
+        }
+      },
+      {
+        "question": "yes port hawkesbury nova scotia store 3068",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "いつ倉庫に納品される",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      },
+      {
+        "question": "通関状況は",
+        "labels": {
+          "shipment_information": 1,
+          "realtime_query": 1
+        }
+      }
+    ],
+    "min_errors_from_label_conflicts": 38,
+    "accuracy_ceiling_from_conflicts": 0.9800420168067226
+  },
+  "common_3word_prefixes": [
+    [
+      "what is the",
+      88
+    ],
+    [
+      "how do i",
+      62
+    ],
+    [
+      "what shipments are",
+      40
+    ],
+    [
+      "how can i",
+      34
+    ],
+    [
+      "show me all",
+      16
+    ],
+    [
+      "i want to",
+      16
+    ],
+    [
+      "is there a",
+      15
+    ],
+    [
+      "where can i",
+      15
+    ],
+    [
+      "can you tell",
+      12
+    ],
+    [
+      "i need to",
+      12
+    ],
+    [
+      "can you show",
+      11
+    ],
+    [
+      "purchasing document status",
+      10
+    ],
+    [
+      "can you give",
+      10
+    ],
+    [
+      "tms shipment id",
+      9
+    ],
+    [
+      "what shipment are",
+      8
+    ],
+    [
+      "can i get",
+      8
+    ],
+    [
+      "please tell me",
+      8
+    ],
+    [
+      "how to get",
+      7
+    ],
+    [
+      "where is my",
+      7
+    ],
+    [
+      "how to save",
+      7
+    ]
+  ],
+  "near_duplicates": {
+    "pairs_cosine_ge_0.9_not_exact": 170,
+    "of_which_conflicting_label": 16,
+    "examples": [
+      {
+        "a": "estimated delivery date (ETA) to Turkey: JPCEVTYO260155965 JPCEVTYO260178134 JPCEVTYO26016",
+        "a_label": "realtime_query",
+        "b": "please provide estimated delivery date to TurkeyJPCEVTYO260150886 JPCEVTYO260155965 JPCEVT",
+        "b_label": "shipment_information"
+      },
+      {
+        "a": "purchasing document status-PO 4507153487",
+        "a_label": "other",
+        "b": "purchasing document status- 4507153487",
+        "b_label": "realtime_query"
+      },
+      {
+        "a": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "a_label": "shipment_information",
+        "b": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "b_label": "analytics"
+      },
+      {
+        "a": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "a_label": "shipment_information",
+        "b": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "b_label": "analytics"
+      },
+      {
+        "a": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "a_label": "shipment_information",
+        "b": "0034901245 0034899892 0034896967 0034901243 0034899888 0034902438 0034901239 0034902423 00",
+        "b_label": "analytics"
+      },
+      {
+        "a": "Return all loads shipping out of Sikeston, Covington, Tulare and Hazleton to a customer th",
+        "a_label": "realtime_query",
+        "b": "Return all frozen loads shipping out of Sikeston, Covington, Tulare and Hazleton to a cust",
+        "b_label": "shipment_information"
+      },
+      {
+        "a": "4308462335",
+        "a_label": "shipment_information",
+        "b": "4308462335 status",
+        "b_label": "realtime_query"
+      },
+      {
+        "a": "TMS Shipment ID Order Creation Date ETA at POD Booking # Container # Carrier 2066785108 20",
+        "a_label": "shipment_information",
+        "b": "TMS Shipment ID Order Creation Date ETA at POD Booking # Container # Carrier 2066785108 20",
+        "b_label": "analytics"
+      },
+      {
+        "a": "Origin Site Code Destination Site Code Material Material Description Material Quantity Sal",
+        "a_label": "analytics",
+        "b": "Origin Site Code Destination Site Code Material Material Description Material Quantity Sal",
+        "b_label": "realtime_query"
+      },
+      {
+        "a": "Origin Site Code Destination Site Code Material Material Description Material Quantity Sal",
+        "a_label": "analytics",
+        "b": "Origin Site Code Destination Site Code Material Material Description Material Quantity Sal",
+        "b_label": "realtime_query"
+      },
+      {
+        "a": "Please tell me all Portland OR shipments that are at risk of missing on time delivery toda",
+        "a_label": "realtime_query",
+        "b": "Please tell me all Portland, OR shipments that are missing on time delivery today",
+        "b_label": "shipment_information"
+      },
+      {
+        "a": "Please tell me all Portland OR shipments that are at risk of missing on delivery today",
+        "a_label": "realtime_query",
+        "b": "Please tell me all Portland, OR shipments that are missing on time delivery today",
+        "b_label": "shipment_information"
+      },
+      {
+        "a": "Please tell me all Portland, OR shipments that are missing on time delivery today",
+        "a_label": "shipment_information",
+        "b": "Please tell me all Portland, OR shipments that are at risk of missing on time delivery tod",
+        "b_label": "realtime_query"
+      },
+      {
+        "a": "What is the wait time for carriers crossing the World Trade Bridge in Laredo today 7/29/20",
+        "a_label": "realtime_query",
+        "b": "What is the wait time for carriers crossing the World Trade Bridge in Laredo?",
+        "b_label": "disruptions"
+      },
+      {
+        "a": "Where is schneider trailer TA214262",
+        "a_label": "realtime_query",
+        "b": "schneider trailer TA214262",
+        "b_label": "shipment_information"
+      }
+    ]
+  },
+  "train_test_overlap": {
+    "test_rows_with_exact_train_match": 77,
+    "test_unique_questions": 453,
+    "test_internal_duplicate_rows": 174,
+    "test_most_repeated": [
+      [
+        "please tell me all portland or shipments that are at risk of missing on time del",
+        15
+      ],
+      [
+        "what is the status of load 00332009115438339",
+        13
+      ],
+      [
+        "can you tell me how many of church and dwight s shipments are running late or ve",
+        6
+      ],
+      [
+        "please tell me all portland or shipments that are in danger of missing on time d",
+        5
+      ],
+      [
+        "please tell me all portland or shipments that are at risk of missing on time pic",
+        5
+      ],
+      [
+        "please tell me all portland or shipments that are in danger of missing on time p",
+        5
+      ],
+      [
+        "how many of my loads are late",
+        4
+      ],
+      [
+        "where is this load 00332009115123129",
+        4
+      ]
+    ],
+    "test_pct_rows_in_duplicate_groups": 0.30742049469964666
+  },
+  "cue_prevalence_by_class": {
+    "shipment_information": {
+      "temporal_past": 0.027,
+      "temporal_now": 0.102,
+      "temporal_future": 0.051,
+      "aggregate": 0.035,
+      "eta_status": 0.27,
+      "where": 0.02,
+      "track": 0.062,
+      "how_to": 0.039,
+      "disruption": 0.012,
+      "greeting": 0.0,
+      "reference_id": 0.207,
+      "multi_ids": 0.07
+    },
+    "realtime_query": {
+      "temporal_past": 0.026,
+      "temporal_now": 0.161,
+      "temporal_future": 0.04,
+      "aggregate": 0.038,
+      "eta_status": 0.402,
+      "where": 0.054,
+      "track": 0.058,
+      "how_to": 0.068,
+      "disruption": 0.009,
+      "greeting": 0.014,
+      "reference_id": 0.541,
+      "multi_ids": 0.116
+    },
+    "analytics": {
+      "temporal_past": 0.21,
+      "temporal_now": 0.066,
+      "temporal_future": 0.004,
+      "aggregate": 0.335,
+      "eta_status": 0.28,
+      "where": 0.051,
+      "track": 0.07,
+      "how_to": 0.093,
+      "disruption": 0.019,
+      "greeting": 0.012,
+      "reference_id": 0.113,
+      "multi_ids": 0.082
+    },
+    "disruptions": {
+      "temporal_past": 0.036,
+      "temporal_now": 0.179,
+      "temporal_future": 0.036,
+      "aggregate": 0.036,
+      "eta_status": 0.036,
+      "where": 0.0,
+      "track": 0.0,
+      "how_to": 0.071,
+      "disruption": 0.643,
+      "greeting": 0.036,
+      "reference_id": 0.071,
+      "multi_ids": 0.0
+    },
+    "chitchat": {
+      "temporal_past": 0.0,
+      "temporal_now": 0.0,
+      "temporal_future": 0.0,
+      "aggregate": 0.0,
+      "eta_status": 0.0,
+      "where": 0.0,
+      "track": 0.0,
+      "how_to": 0.0,
+      "disruption": 0.0,
+      "greeting": 0.647,
+      "reference_id": 0.0,
+      "multi_ids": 0.0
+    },
+    "knowledge_base": {
+      "temporal_past": 0.01,
+      "temporal_now": 0.033,
+      "temporal_future": 0.028,
+      "aggregate": 0.077,
+      "eta_status": 0.155,
+      "where": 0.088,
+      "track": 0.126,
+      "how_to": 0.464,
+      "disruption": 0.002,
+      "greeting": 0.002,
+      "reference_id": 0.01,
+      "multi_ids": 0.004
+    },
+    "other": {
+      "temporal_past": 0.018,
+      "temporal_now": 0.0,
+      "temporal_future": 0.0,
+      "aggregate": 0.018,
+      "eta_status": 0.164,
+      "where": 0.036,
+      "track": 0.0,
+      "how_to": 0.073,
+      "disruption": 0.0,
+      "greeting": 0.0,
+      "reference_id": 0.109,
+      "multi_ids": 0.018
+    }
+  },
+  "cue_prevalence_test": {
+    "temporal_past": 0.041,
+    "temporal_now": 0.145,
+    "temporal_future": 0.018,
+    "aggregate": 0.122,
+    "eta_status": 0.369,
+    "where": 0.034,
+    "track": 0.106,
+    "how_to": 0.152,
+    "disruption": 0.085,
+    "greeting": 0.007,
+    "reference_id": 0.304,
+    "multi_ids": 0.005
+  },
+  "bare_id_questions": {
+    "train_by_class": {
+      "realtime_query": 65,
+      "shipment_information": 16
+    },
+    "test_count": 25
+  },
+  "short_questions_le_2_words": {
+    "count": 204,
+    "by_class": {
+      "realtime_query": 115,
+      "shipment_information": 52,
+      "other": 10,
+      "chitchat": 9,
+      "analytics": 7,
+      "knowledge_base": 6,
+      "disruptions": 5
+    },
+    "examples": [
+      [
+        "TBA334783648241",
+        "realtime_query"
+      ],
+      [
+        "4413511",
+        "realtime_query"
+      ],
+      [
+        "137925947",
+        "realtime_query"
+      ],
+      [
+        "CMV3913820",
+        "shipment_information"
+      ],
+      [
+        "8006899320",
+        "shipment_information"
+      ],
+      [
+        "Status",
+        "realtime_query"
+      ],
+      [
+        "73694283",
+        "shipment_information"
+      ],
+      [
+        "continue",
+        "analytics"
+      ],
+      [
+        "212108622",
+        "realtime_query"
+      ],
+      [
+        "sl811822",
+        "realtime_query"
+      ],
+      [
+        "yes",
+        "shipment_information"
+      ],
+      [
+        "confirm",
+        "shipment_information"
+      ],
+      [
+        "load number",
+        "realtime_query"
+      ],
+      [
+        "79398770",
+        "realtime_query"
+      ],
+      [
+        "4309704808",
+        "realtime_query"
+      ],
+      [
+        "Carrier management",
+        "analytics"
+      ],
+      [
+        "56521964",
+        "realtime_query"
+      ],
+      [
+        "bol",
+        "shipment_information"
+      ],
+      [
+        "POD",
+        "realtime_query"
+      ],
+      [
+        "120118269",
+        "shipment_information"
+      ],
+      [
+        "551734401 POD",
+        "realtime_query"
+      ],
+      [
+        "pod",
+        "realtime_query"
+      ],
+      [
+        "PO 823180",
+        "shipment_information"
+      ],
+      [
+        "304566071",
+        "realtime_query"
+      ],
+      [
+        "2127491775",
+        "realtime_query"
+      ],
+      [
+        "212791775",
+        "shipment_information"
+      ],
+      [
+        "501107431",
+        "realtime_query"
+      ],
+      [
+        "501158537",
+        "realtime_query"
+      ],
+      [
+        "paris deliverys",
+        "realtime_query"
+      ],
+      [
+        "SOU1001418248",
+        "realtime_query"
+      ],
+      [
+        "associated foods",
+        "shipment_information"
+      ],
+      [
+        "CV36004469508",
+        "realtime_query"
+      ],
+      [
+        "4514710365",
+        "realtime_query"
+      ],
+      [
+        "468511271",
+        "realtime_query"
+      ],
+      [
+        "UPCOMING DELIVERIES",
+        "realtime_query"
+      ],
+      [
+        "STORE NUMBER",
+        "shipment_information"
+      ],
+      [
+        "3164 DELIVERY",
+        "shipment_information"
+      ],
+      [
+        "400797769",
+        "realtime_query"
+      ],
+      [
+        "RACX 82516",
+        "realtime_query"
+      ],
+      [
+        "SOU1001431573",
+        "realtime_query"
+      ]
+    ]
+  },
+  "top_tokens_per_class": {
+    "analytics": [
+      "order",
+      "time",
+      "orders",
+      "otd",
+      "month",
+      "which",
+      "performance",
+      "hlcubsc2606dgtv0",
+      "on time",
+      "report",
+      "and",
+      "of",
+      "parcel",
+      "rate",
+      "us"
+    ],
+    "chitchat": [
+      "hi",
+      "hello",
+      "you",
+      "whats",
+      "awesome",
+      "this is",
+      "that is",
+      "thanks",
+      "what can",
+      "you do",
+      "que",
+      "up",
+      "puedes hacer",
+      "hacer",
+      "es lo"
+    ],
+    "disruptions": [
+      "disruptions",
+      "impacted",
+      "sea",
+      "atlantic",
+      "port",
+      "wildfire",
+      "impacted by",
+      "ontario",
+      "due",
+      "by",
+      "tropical",
+      "could be",
+      "algun",
+      "due to",
+      "shanghai"
+    ],
+    "knowledge_base": [
+      "how",
+      "fourkites",
+      "does",
+      "can",
+      "how do",
+      "do",
+      "to",
+      "how to",
+      "filter",
+      "how can",
+      "the",
+      "where can",
+      "como",
+      "geofence",
+      "options"
+    ],
+    "other": [
+      "sorting",
+      "cest",
+      "country",
+      "make",
+      "read",
+      "both",
+      "tracy",
+      "email",
+      "csv",
+      "map",
+      "activity",
+      "new activity",
+      "you help",
+      "data",
+      "to send"
+    ],
+    "realtime_query": [
+      "status",
+      "where is",
+      "shipment",
+      "pod",
+      "loads",
+      "delivered",
+      "did",
+      "about",
+      "today",
+      "deliver",
+      "status on",
+      "these loads",
+      "store",
+      "id",
+      "track"
+    ],
+    "shipment_information": [
+      "frozen",
+      "shipments",
+      "truck",
+      "need to",
+      "yes",
+      "any loads",
+      "be delivered",
+      "or",
+      "see",
+      "burgas",
+      "shipment",
+      "andalusia",
+      "shipment status",
+      "woods",
+      "today"
+    ]
+  },
+  "triad_cue_prevalence": {
+    "analytics": {
+      "temporal_past": 0.21,
+      "temporal_now": 0.066,
+      "temporal_future": 0.004,
+      "aggregate": 0.335,
+      "eta_status": 0.28,
+      "where": 0.051,
+      "track": 0.07,
+      "how_to": 0.093,
+      "disruption": 0.019,
+      "greeting": 0.012,
+      "reference_id": 0.113,
+      "multi_ids": 0.082
+    },
+    "realtime_query": {
+      "temporal_past": 0.026,
+      "temporal_now": 0.161,
+      "temporal_future": 0.04,
+      "aggregate": 0.038,
+      "eta_status": 0.402,
+      "where": 0.054,
+      "track": 0.058,
+      "how_to": 0.068,
+      "disruption": 0.009,
+      "greeting": 0.014,
+      "reference_id": 0.541,
+      "multi_ids": 0.116
+    },
+    "shipment_information": {
+      "temporal_past": 0.027,
+      "temporal_now": 0.102,
+      "temporal_future": 0.051,
+      "aggregate": 0.035,
+      "eta_status": 0.27,
+      "where": 0.02,
+      "track": 0.062,
+      "how_to": 0.039,
+      "disruption": 0.012,
+      "greeting": 0.0,
+      "reference_id": 0.207,
+      "multi_ids": 0.07
+    }
+  },
+  "language_heuristic": {
+    "train": {
+      "en": 1882,
+      "ja/zh": 10,
+      "es": 8,
+      "pt": 4
+    },
+    "test": {
+      "en": 558,
+      "fr": 8
+    }
+  },
+  "leakage": {
+    "stratified_5fold": {
+      "folds": [
+        {
+          "fold": 0,
+          "val_rows": 381,
+          "leaked_rows": 59
+        },
+        {
+          "fold": 1,
+          "val_rows": 381,
+          "leaked_rows": 78
+        },
+        {
+          "fold": 2,
+          "val_rows": 381,
+          "leaked_rows": 58
+        },
+        {
+          "fold": 3,
+          "val_rows": 381,
+          "leaked_rows": 62
+        },
+        {
+          "fold": 4,
+          "val_rows": 380,
+          "leaked_rows": 62
+        }
+      ],
+      "total_leaked_rows": 319
+    },
+    "grouped_5fold": {
+      "folds": [
+        {
+          "fold": 0,
+          "val_rows": 381,
+          "leaked_rows": 0
+        },
+        {
+          "fold": 1,
+          "val_rows": 382,
+          "leaked_rows": 0
+        },
+        {
+          "fold": 2,
+          "val_rows": 381,
+          "leaked_rows": 0
+        },
+        {
+          "fold": 3,
+          "val_rows": 380,
+          "leaked_rows": 0
+        },
+        {
+          "fold": 4,
+          "val_rows": 380,
+          "leaked_rows": 0
+        }
+      ],
+      "total_leaked_rows": 0
+    }
+  },
+  "grouped_fold_class_counts": [
+    {
+      "shipment_information": 52,
+      "realtime_query": 156,
+      "analytics": 52,
+      "disruptions": 5,
+      "chitchat": 3,
+      "knowledge_base": 102,
+      "other": 11
+    },
+    {
+      "shipment_information": 51,
+      "realtime_query": 157,
+      "analytics": 52,
+      "disruptions": 6,
+      "chitchat": 3,
+      "knowledge_base": 102,
+      "other": 11
+    },
+    {
+      "shipment_information": 51,
+      "realtime_query": 156,
+      "analytics": 51,
+      "disruptions": 6,
+      "chitchat": 5,
+      "knowledge_base": 101,
+      "other": 11
+    },
+    {
+      "shipment_information": 51,
+      "realtime_query": 156,
+      "analytics": 51,
+      "disruptions": 6,
+      "chitchat": 3,
+      "knowledge_base": 102,
+      "other": 11
+    },
+    {
+      "shipment_information": 51,
+      "realtime_query": 157,
+      "analytics": 51,
+      "disruptions": 5,
+      "chitchat": 3,
+      "knowledge_base": 102,
+      "other": 11
+    }
+  ]
+}

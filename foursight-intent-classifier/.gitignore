@@ -1,0 +1,31 @@
+# Confidential challenge materials: never commit raw data or the challenge PDF
+data/train.csv
+data/test.csv
+data/*.csv
+!data/README.md
+*.pdf
+!report.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Experiment artefacts
+wandb/
+models/**/checkpoint-*/
+models/**/*.bin
+models/**/*.safetensors
+models/**/optimizer.pt
+reports/cache/
+*.log
+.DS_Store
+
+# Derived files that embed the confidential question text (keep local only)
+reports/validation/
+reports/results/oof_predictions_*.csv
+reports/cache/
+models/_smoke/

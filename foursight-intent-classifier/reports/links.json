@@ -1,0 +1,6 @@
+{
+  "github": "NOT PUBLISHED (repository prepared locally; no public remote authorised in this session)",
+  "huggingface": "NOT PUBLISHED (weights + model card in models/final/; upload via scripts/publish_artifacts.py --push)",
+  "wandb": "NOT PUBLISHED (37 offline runs in wandb/ with loss curves, per-class OVERALL and configs; `wandb sync wandb/offline-run-*` once credentials exist)",
+  "wandb_offline_runs": "see `ls wandb`"
+}

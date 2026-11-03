@@ -1,0 +1,440 @@
+{
+  "name": "ensemble_top5",
+  "kind": "ensemble",
+  "members": [
+    "deberta_v3_small",
+    "bge_small_ft",
+    "e5_small_ft",
+    "roberta_base",
+    "distilbert"
+  ],
+  "protocol": "grouped",
+  "folds_run": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows_evaluated": 1904,
+  "config": {
+    "model_name": "ensemble: deberta_v3_small + bge_small_ft + e5_small_ft + roberta_base + distilbert",
+    "max_length": 128,
+    "tail_tokens": 16,
+    "batch_size": 16,
+    "eval_batch_size": 64,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_epochs": 8,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "class_weight": "sqrt_inv",
+    "label_smoothing": 0.0,
+    "seed": 42,
+    "device": "mps",
+    "num_threads": null,
+    "fixed_epochs": null
+  },
+  "member_configs": {
+    "deberta_v3_small": {
+      "model_name": "microsoft/deberta-v3-small",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    },
+    "bge_small_ft": {
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    },
+    "e5_small_ft": {
+      "model_name": "intfloat/multilingual-e5-small",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    },
+    "roberta_base": {
+      "model_name": "FacebookAI/roberta-base",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    },
+    "distilbert": {
+      "model_name": "distilbert/distilbert-base-uncased",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 3e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    }
+  },
+  "accuracy_oof": 0.7352941176470589,
+  "macro_f1_oof": 0.6187741317689722,
+  "OVERALL_oof": 0.6653821261202069,
+  "OVERALL_fold_mean": 0.6605998902317355,
+  "OVERALL_fold_std": 0.01120089114115906,
+  "per_class": {
+    "shipment_information": {
+      "precision": 0.38388625592417064,
+      "recall": 0.31640625,
+      "f1": 0.3468950749464668,
+      "support": 256
+    },
+    "realtime_query": {
+      "precision": 0.7474285714285714,
+      "recall": 0.8363171355498721,
+      "f1": 0.7893783946891973,
+      "support": 782
+    },
+    "analytics": {
+      "precision": 0.6752136752136753,
+      "recall": 0.6147859922178989,
+      "f1": 0.6435845213849287,
+      "support": 257
+    },
+    "disruptions": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7142857142857143,
+      "f1": 0.7692307692307692,
+      "support": 28
+    },
+    "chitchat": {
+      "precision": 0.8125,
+      "recall": 0.7647058823529411,
+      "f1": 0.787878787878788,
+      "support": 17
+    },
+    "knowledge_base": {
+      "precision": 0.8853383458646616,
+      "recall": 0.925343811394892,
+      "f1": 0.9048991354466858,
+      "support": 509
+    },
+    "other": {
+      "precision": 0.25,
+      "recall": 0.05454545454545454,
+      "f1": 0.08955223880597014,
+      "support": 55
+    }
+  },
+  "confusion": {
+    "shipment_information": {
+      "realtime_query": 143,
+      "analytics": 21,
+      "knowledge_base": 10,
+      "shipment_information": 81,
+      "disruptions": 1
+    },
+    "realtime_query": {
+      "realtime_query": 654,
+      "shipment_information": 79,
+      "analytics": 34,
+      "other": 3,
+      "chitchat": 1,
+      "knowledge_base": 9,
+      "disruptions": 2
+    },
+    "analytics": {
+      "realtime_query": 58,
+      "analytics": 158,
+      "knowledge_base": 20,
+      "shipment_information": 19,
+      "other": 2
+    },
+    "disruptions": {
+      "disruptions": 20,
+      "shipment_information": 4,
+      "analytics": 2,
+      "realtime_query": 2
+    },
+    "chitchat": {
+      "knowledge_base": 2,
+      "chitchat": 13,
+      "analytics": 1,
+      "other": 1
+    },
+    "knowledge_base": {
+      "knowledge_base": 471,
+      "analytics": 13,
+      "shipment_information": 11,
+      "realtime_query": 10,
+      "other": 3,
+      "chitchat": 1
+    },
+    "other": {
+      "realtime_query": 8,
+      "knowledge_base": 20,
+      "shipment_information": 17,
+      "analytics": 5,
+      "disruptions": 1,
+      "other": 3,
+      "chitchat": 1
+    }
+  },
+  "confused_pairs": [
+    [
+      143,
+      "shipment_information",
+      "realtime_query"
+    ],
+    [
+      79,
+      "realtime_query",
+      "shipment_information"
+    ],
+    [
+      58,
+      "analytics",
+      "realtime_query"
+    ],
+    [
+      34,
+      "realtime_query",
+      "analytics"
+    ],
+    [
+      21,
+      "shipment_information",
+      "analytics"
+    ],
+    [
+      20,
+      "other",
+      "knowledge_base"
+    ],
+    [
+      20,
+      "analytics",
+      "knowledge_base"
+    ],
+    [
+      19,
+      "analytics",
+      "shipment_information"
+    ],
+    [
+      17,
+      "other",
+      "shipment_information"
+    ],
+    [
+      13,
+      "knowledge_base",
+      "analytics"
+    ],
+    [
+      11,
+      "knowledge_base",
+      "shipment_information"
+    ],
+    [
+      10,
+      "shipment_information",
+      "knowledge_base"
+    ]
+  ],
+  "triad_errors": {
+    "shipment_information->realtime_query": 143,
+    "realtime_query->shipment_information": 79,
+    "analytics->realtime_query": 58,
+    "realtime_query->analytics": 34,
+    "shipment_information->analytics": 21,
+    "analytics->shipment_information": 19,
+    "total_triad_errors": 354
+  },
+  "best_epochs": {
+    "deberta_v3_small": [
+      6,
+      3,
+      4,
+      3,
+      3
+    ],
+    "bge_small_ft": [
+      6,
+      6,
+      7,
+      4,
+      4
+    ],
+    "e5_small_ft": [
+      3,
+      5,
+      4,
+      8,
+      4
+    ],
+    "roberta_base": [
+      6,
+      4,
+      3,
+      5,
+      5
+    ],
+    "distilbert": [
+      5,
+      3,
+      3,
+      7,
+      3
+    ]
+  },
+  "train_seconds_total": 2185.6675410809967,
+  "folds": [
+    {
+      "fold": 0,
+      "best_epoch": null,
+      "accuracy": 0.7532808398950132,
+      "macro_f1": 0.6117879726841703,
+      "OVERALL": 0.6683851195685074,
+      "per_class_f1": {
+        "shipment_information": 0.32941176470588235,
+        "realtime_query": 0.8012048192771084,
+        "analytics": 0.68,
+        "disruptions": 0.7499999999999999,
+        "chitchat": 0.6666666666666666,
+        "knowledge_base": 0.9302325581395348,
+        "other": 0.12500000000000003
+      },
+      "history": [],
+      "train_seconds": 518.0211937499994
+    },
+    {
+      "fold": 1,
+      "best_epoch": null,
+      "accuracy": 0.7356020942408377,
+      "macro_f1": 0.6342376120197243,
+      "OVERALL": 0.6747834049081696,
+      "per_class_f1": {
+        "shipment_information": 0.3469387755102041,
+        "realtime_query": 0.7951070336391438,
+        "analytics": 0.6808510638297872,
+        "disruptions": 0.7272727272727272,
+        "chitchat": 0.8571428571428571,
+        "knowledge_base": 0.8785046728971961,
+        "other": 0.15384615384615385
+      },
+      "history": [],
+      "train_seconds": 411.02822633299957
+    },
+    {
+      "fold": 2,
+      "best_epoch": null,
+      "accuracy": 0.7165354330708661,
+      "macro_f1": 0.6146018209432844,
+      "OVERALL": 0.655375265794317,
+      "per_class_f1": {
+        "shipment_information": 0.3333333333333333,
+        "realtime_query": 0.7804878048780488,
+        "analytics": 0.58,
+        "disruptions": 0.5454545454545454,
+        "chitchat": 1.0,
+        "knowledge_base": 0.9090909090909091,
+        "other": 0.15384615384615385
+      },
+      "history": [],
+      "train_seconds": 403.4867667489998
+    },
+    {
+      "fold": 3,
+      "best_epoch": null,
+      "accuracy": 0.7342105263157894,
+      "macro_f1": 0.5809879655548235,
+      "OVERALL": 0.6422769898592098,
+      "per_class_f1": {
+        "shipment_information": 0.3488372093023256,
+        "realtime_query": 0.7861271676300579,
+        "analytics": 0.6136363636363636,
+        "disruptions": 0.923076923076923,
+        "chitchat": 0.5,
+        "knowledge_base": 0.8952380952380952,
+        "other": 0.0
+      },
+      "history": [],
+      "train_seconds": 455.5346845409995
+    },
+    {
+      "fold": 4,
+      "best_epoch": null,
+      "accuracy": 0.7368421052631579,
+      "macro_f1": 0.6124030482053507,
+      "OVERALL": 0.6621786710284736,
+      "per_class_f1": {
+        "shipment_information": 0.37500000000000006,
+        "realtime_query": 0.7839506172839507,
+        "analytics": 0.6605504587155964,
+        "disruptions": 0.888888888888889,
+        "chitchat": 0.6666666666666666,
+        "knowledge_base": 0.9117647058823528,
+        "other": 0.0
+      },
+      "history": [],
+      "train_seconds": 397.59666970799844
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Pinned to the versions used for the reported results (Python 3.11, macOS arm64).
+# Regenerate with: .venv/bin/python -m pip freeze > requirements-lock.txt
+numpy>=1.26,<3
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.11
+torch>=2.3
+transformers>=4.44
+tokenizers>=0.19
+sentencepiece>=0.2
+protobuf>=4
+sentence-transformers>=3.0
+safetensors>=0.4
+huggingface_hub>=0.24
+pyyaml>=6
+tqdm>=4.66
+matplotlib>=3.8
+pytest>=7.4
+wandb>=0.17
+reportlab>=4.0

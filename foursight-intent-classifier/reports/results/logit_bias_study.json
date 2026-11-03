@@ -1,0 +1,240 @@
+{
+  "candidates": {
+    "bge_small_ft": {
+      "OVERALL_no_bias": 0.639513469127021,
+      "OVERALL_bias_cross_fitted": 0.6416092527802659,
+      "delta": 0.0020957836532449203,
+      "OVERALL_rules_only": 0.6441972057821568,
+      "OVERALL_bias_plus_rules": 0.6442233963700068,
+      "macro_f1_no_bias": 0.5809118042873319,
+      "macro_f1_bias": 0.5889565977710314,
+      "accuracy_no_bias": 0.7274159663865546,
+      "accuracy_bias": 0.7205882352941176,
+      "per_class_f1_no_bias": {
+        "shipment_information": 0.3697813121272366,
+        "realtime_query": 0.7874306839186692,
+        "analytics": 0.6403162055335968,
+        "disruptions": 0.6122448979591837,
+        "chitchat": 0.6666666666666667,
+        "knowledge_base": 0.9003906250000001,
+        "other": 0.08955223880597014
+      },
+      "per_class_f1_bias": {
+        "shipment_information": 0.36178861788617883,
+        "realtime_query": 0.7864197530864198,
+        "analytics": 0.6442687747035573,
+        "disruptions": 0.5964912280701754,
+        "chitchat": 0.7142857142857143,
+        "knowledge_base": 0.8875739644970414,
+        "other": 0.13186813186813187
+      },
+      "fold_bias_mean": {
+        "shipment_information": -0.2,
+        "realtime_query": -0.2,
+        "analytics": -0.14,
+        "disruptions": 0.1,
+        "chitchat": -0.38,
+        "knowledge_base": -0.46,
+        "other": 0.06
+      },
+      "fold_bias_std": {
+        "shipment_information": 0.0,
+        "realtime_query": 0.0,
+        "analytics": 0.196,
+        "disruptions": 0.2,
+        "chitchat": 0.16,
+        "knowledge_base": 0.585,
+        "other": 0.12
+      }
+    },
+    "deberta_v3_small": {
+      "OVERALL_no_bias": 0.6491187622593644,
+      "OVERALL_bias_cross_fitted": 0.6414130883412761,
+      "delta": -0.007705673918088296,
+      "OVERALL_rules_only": 0.6520745814711996,
+      "OVERALL_bias_plus_rules": 0.6447847575171098,
+      "macro_f1_no_bias": 0.6105760883594448,
+      "macro_f1_bias": 0.6040358195043677,
+      "accuracy_no_bias": 0.7069327731092437,
+      "accuracy_bias": 0.6974789915966386,
+      "per_class_f1_no_bias": {
+        "shipment_information": 0.2813186813186813,
+        "realtime_query": 0.7679525222551928,
+        "analytics": 0.5960264900662252,
+        "disruptions": 0.7547169811320756,
+        "chitchat": 0.7999999999999999,
+        "knowledge_base": 0.8865179437439379,
+        "other": 0.18749999999999997
+      },
+      "per_class_f1_bias": {
+        "shipment_information": 0.30677290836653387,
+        "realtime_query": 0.7597765363128491,
+        "analytics": 0.5731958762886599,
+        "disruptions": 0.7407407407407408,
+        "chitchat": 0.7999999999999999,
+        "knowledge_base": 0.888673765730881,
+        "other": 0.1590909090909091
+      },
+      "fold_bias_mean": {
+        "shipment_information": -0.08,
+        "realtime_query": -0.26,
+        "analytics": 0.24,
+        "disruptions": -0.5,
+        "chitchat": 0.0,
+        "knowledge_base": 0.08,
+        "other": -0.04
+      },
+      "fold_bias_std": {
+        "shipment_information": 0.194,
+        "realtime_query": 0.215,
+        "analytics": 0.294,
+        "disruptions": 0.562,
+        "chitchat": 0.0,
+        "knowledge_base": 0.075,
+        "other": 0.049
+      }
+    },
+    "distilbert": {
+      "OVERALL_no_bias": 0.6194751062205996,
+      "OVERALL_bias_cross_fitted": 0.614200510832557,
+      "delta": -0.005274595388042647,
+      "OVERALL_rules_only": 0.6438649561711529,
+      "OVERALL_bias_plus_rules": 0.6375390567147463,
+      "macro_f1_no_bias": 0.5695733563060413,
+      "macro_f1_bias": 0.5597319438245699,
+      "accuracy_no_bias": 0.694327731092437,
+      "accuracy_bias": 0.6959033613445378,
+      "per_class_f1_no_bias": {
+        "shipment_information": 0.38245614035087716,
+        "realtime_query": 0.7630890052356021,
+        "analytics": 0.591715976331361,
+        "disruptions": 0.7450980392156864,
+        "chitchat": 0.4,
+        "knowledge_base": 0.8646543330087633,
+        "other": 0.23999999999999996
+      },
+      "per_class_f1_bias": {
+        "shipment_information": 0.3625730994152046,
+        "realtime_query": 0.7662255828607436,
+        "analytics": 0.5856573705179283,
+        "disruptions": 0.7111111111111111,
+        "chitchat": 0.42857142857142855,
+        "knowledge_base": 0.8599033816425121,
+        "other": 0.2040816326530612
+      },
+      "fold_bias_mean": {
+        "shipment_information": -0.1,
+        "realtime_query": 0.14,
+        "analytics": 0.02,
+        "disruptions": -1.38,
+        "chitchat": 0.56,
+        "knowledge_base": 0.14,
+        "other": -0.02
+      },
+      "fold_bias_std": {
+        "shipment_information": 0.0,
+        "realtime_query": 0.049,
+        "analytics": 0.075,
+        "disruptions": 0.691,
+        "chitchat": 0.08,
+        "knowledge_base": 0.215,
+        "other": 0.04
+      }
+    },
+    "e5_small_ft": {
+      "OVERALL_no_bias": 0.628349469475763,
+      "OVERALL_bias_cross_fitted": 0.6290300672608478,
+      "delta": 0.00068059778508478,
+      "OVERALL_rules_only": 0.6288323039306776,
+      "OVERALL_bias_plus_rules": 0.6254272049892141,
+      "macro_f1_no_bias": 0.5689577992663277,
+      "macro_f1_bias": 0.5844478712050544,
+      "accuracy_no_bias": 0.717436974789916,
+      "accuracy_bias": 0.6959033613445378,
+      "per_class_f1_no_bias": {
+        "shipment_information": 0.22282608695652173,
+        "realtime_query": 0.7876712328767123,
+        "analytics": 0.5747126436781609,
+        "disruptions": 0.7636363636363638,
+        "chitchat": 0.75,
+        "knowledge_base": 0.8838582677165354,
+        "other": 0.0
+      },
+      "per_class_f1_bias": {
+        "shipment_information": 0.3502626970227671,
+        "realtime_query": 0.7682375726275017,
+        "analytics": 0.5752895752895753,
+        "disruptions": 0.7241379310344827,
+        "chitchat": 0.7027027027027027,
+        "knowledge_base": 0.8809523809523809,
+        "other": 0.08955223880597014
+      },
+      "fold_bias_mean": {
+        "shipment_information": -0.04,
+        "realtime_query": -0.88,
+        "analytics": -0.26,
+        "disruptions": -0.02,
+        "chitchat": -0.02,
+        "knowledge_base": -0.5,
+        "other": 0.34
+      },
+      "fold_bias_std": {
+        "shipment_information": 0.242,
+        "realtime_query": 0.279,
+        "analytics": 0.136,
+        "disruptions": 0.04,
+        "chitchat": 0.04,
+        "knowledge_base": 0.089,
+        "other": 0.08
+      }
+    },
+    "roberta_base": {
+      "OVERALL_no_bias": 0.627733637984637,
+      "OVERALL_bias_cross_fitted": 0.6427334738270807,
+      "delta": 0.014999835842443687,
+      "OVERALL_rules_only": 0.6532115106562446,
+      "OVERALL_bias_plus_rules": 0.6537999379433515,
+      "macro_f1_no_bias": 0.5682815535038068,
+      "macro_f1_bias": 0.587679039011521,
+      "accuracy_no_bias": 0.7169117647058824,
+      "accuracy_bias": 0.7253151260504201,
+      "per_class_f1_no_bias": {
+        "shipment_information": 0.3888888888888889,
+        "realtime_query": 0.7758730158730159,
+        "analytics": 0.6464646464646464,
+        "disruptions": 0.7777777777777779,
+        "chitchat": 0.3333333333333333,
+        "knowledge_base": 0.8923679060665362,
+        "other": 0.16326530612244897
+      },
+      "per_class_f1_bias": {
+        "shipment_information": 0.34573304157549234,
+        "realtime_query": 0.7860635696821515,
+        "analytics": 0.6463414634146342,
+        "disruptions": 0.7857142857142857,
+        "chitchat": 0.4583333333333333,
+        "knowledge_base": 0.8893203883495144,
+        "other": 0.20224719101123595
+      },
+      "fold_bias_mean": {
+        "shipment_information": -0.46,
+        "realtime_query": -0.08,
+        "analytics": -0.24,
+        "disruptions": 0.16,
+        "chitchat": 1.12,
+        "knowledge_base": 0.24,
+        "other": -0.02
+      },
+      "fold_bias_std": {
+        "shipment_information": 0.162,
+        "realtime_query": 0.223,
+        "analytics": 0.361,
+        "disruptions": 0.196,
+        "chitchat": 0.24,
+        "knowledge_base": 0.32,
+        "other": 0.16
+      }
+    }
+  },
+  "verdict": "Per-class logit bias improves cross-fitted OVERALL by > 0.005 for: roberta_base"
+}

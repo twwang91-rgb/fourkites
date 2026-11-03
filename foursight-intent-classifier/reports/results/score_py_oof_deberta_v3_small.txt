@@ -1,0 +1,34 @@
+rows scored          1904   (missing from submission: 0, unknown ids ignored: 0)
+accuracy              70.80%
+macro-F1              61.48%
+weighted-F1           69.44%
+OVERALL               65.21
+
+class                     prec  recall      f1  support
+shipment_information     32.3%   24.6%   27.9%      256
+realtime_query           71.7%   82.9%   76.9%      782
+analytics                68.4%   52.1%   59.2%      257
+disruptions              78.6%   78.6%   78.6%       28
+chitchat                 77.8%   82.4%   80.0%       17
+knowledge_base           87.4%   90.0%   88.7%      509
+other                    23.1%   16.4%   19.1%       55
+
+most confused (gold -> predicted):
+   shipment_information   -> realtime_query         157
+   realtime_query         -> shipment_information   85
+   analytics              -> realtime_query         70
+   realtime_query         -> analytics              29
+   analytics              -> knowledge_base         24
+   analytics              -> shipment_information   23
+   other                  -> knowledge_base         19
+   shipment_information   -> analytics              16
+
+confusion matrix (rows = gold, cols = predicted):
+                       shipment realtime analytic disrupti chitchat knowledg    other __missin
+shipment_information         63      157       16        0        1       10        9        0
+realtime_query               85      648       29        3        2       11        4        0
+analytics                    23       70      134        2        0       24        4        0
+disruptions                   2        2        2       22        0        0        0        0
+chitchat                      0        0        1        0       14        2        0        0
+knowledge_base               10       14       13        0        1      458       13        0
+other                        12       13        1        1        0       19        9        0

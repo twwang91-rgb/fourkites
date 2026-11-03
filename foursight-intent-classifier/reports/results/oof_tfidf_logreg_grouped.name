@@ -1,0 +1,1 @@
+tfidf[word+char]+logreg(C=8.0,cw=balanced)

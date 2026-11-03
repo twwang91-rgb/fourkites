@@ -1,0 +1,65 @@
+{
+  "experiment": "deberta_v3_small",
+  "kind": "single",
+  "epochs": 3,
+  "train_seconds": 399.2734666659999,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.4962575500752746,
+      "lr": 3.695652173913043e-05,
+      "elapsed_s": 153.06845033400077
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0686110385826655,
+      "lr": 1.8478260869565216e-05,
+      "elapsed_s": 283.7757207500008
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8129642265183585,
+      "lr": 0.0,
+      "elapsed_s": 393.9706136250006
+    }
+  ],
+  "config": {
+    "model_name": "microsoft/deberta-v3-small",
+    "max_length": 128,
+    "tail_tokens": 16,
+    "batch_size": 16,
+    "eval_batch_size": 64,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_epochs": 8,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "class_weight": "sqrt_inv",
+    "label_smoothing": 0.0,
+    "seed": 42,
+    "device": "cpu",
+    "num_threads": 8,
+    "fixed_epochs": null
+  },
+  "cv_reference": {
+    "OVERALL_oof": 0.6491187622593644,
+    "macro_f1_oof": 0.6105760883594448,
+    "accuracy_oof": 0.7069327731092437,
+    "best_epochs": [
+      6,
+      3,
+      4,
+      3,
+      3
+    ]
+  },
+  "environment": {
+    "python": "3.11.15",
+    "torch": "2.15.0",
+    "platform": "macOS-15.0.1-arm64-arm-64bit",
+    "transformers": "5.22.1",
+    "device_used": "cpu",
+    "num_threads": 8
+  }
+}

@@ -1,0 +1,107 @@
+{
+ "n": 1904,
+ "accuracy": 0.707983193277311,
+ "macro_f1": 0.6148021736004586,
+ "weighted_f1": 0.6944101455674506,
+ "OVERALL": 0.6520745814711996,
+ "per_class": {
+  "shipment_information": {
+   "precision": 0.3230769230769231,
+   "recall": 0.24609375,
+   "f1": 0.27937915742793795,
+   "support": 256
+  },
+  "realtime_query": {
+   "precision": 0.7168141592920354,
+   "recall": 0.8286445012787724,
+   "f1": 0.7686832740213523,
+   "support": 782
+  },
+  "analytics": {
+   "precision": 0.6836734693877551,
+   "recall": 0.5214007782101168,
+   "f1": 0.5916114790286977,
+   "support": 257
+  },
+  "disruptions": {
+   "precision": 0.7857142857142857,
+   "recall": 0.7857142857142857,
+   "f1": 0.7857142857142857,
+   "support": 28
+  },
+  "chitchat": {
+   "precision": 0.7777777777777778,
+   "recall": 0.8235294117647058,
+   "f1": 0.7999999999999999,
+   "support": 17
+  },
+  "knowledge_base": {
+   "precision": 0.8740458015267175,
+   "recall": 0.899803536345776,
+   "f1": 0.8867376573088093,
+   "support": 509
+  },
+  "other": {
+   "precision": 0.23076923076923078,
+   "recall": 0.16363636363636364,
+   "f1": 0.19148936170212766,
+   "support": 55
+  }
+ },
+ "confusion": {
+  "shipment_information": {
+   "realtime_query": 157,
+   "analytics": 16,
+   "knowledge_base": 10,
+   "shipment_information": 63,
+   "other": 9,
+   "chitchat": 1
+  },
+  "realtime_query": {
+   "realtime_query": 648,
+   "shipment_information": 85,
+   "analytics": 29,
+   "other": 4,
+   "chitchat": 2,
+   "knowledge_base": 11,
+   "disruptions": 3
+  },
+  "analytics": {
+   "shipment_information": 23,
+   "realtime_query": 70,
+   "analytics": 134,
+   "knowledge_base": 24,
+   "other": 4,
+   "disruptions": 2
+  },
+  "disruptions": {
+   "disruptions": 22,
+   "shipment_information": 2,
+   "analytics": 2,
+   "realtime_query": 2
+  },
+  "chitchat": {
+   "knowledge_base": 2,
+   "chitchat": 14,
+   "analytics": 1
+  },
+  "knowledge_base": {
+   "knowledge_base": 458,
+   "shipment_information": 10,
+   "other": 13,
+   "realtime_query": 14,
+   "analytics": 13,
+   "chitchat": 1
+  },
+  "other": {
+   "realtime_query": 13,
+   "other": 9,
+   "knowledge_base": 19,
+   "shipment_information": 12,
+   "disruptions": 1,
+   "analytics": 1
+  }
+ },
+ "missing": 0,
+ "invalid_labels": []
+}

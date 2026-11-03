@@ -1,0 +1,20 @@
+{
+  "rows": 566,
+  "label_counts": {
+    "realtime_query": 312,
+    "knowledge_base": 134,
+    "analytics": 52,
+    "shipment_information": 47,
+    "other": 10,
+    "disruptions": 6,
+    "chitchat": 5
+  },
+  "path": "/Volumes/Data/Workspace/FourKites/candidate_package (3)/foursight-intent-classifier/test_predictions.csv",
+  "needs_review_flagged": 148,
+  "flag_rate": 0.26148409893992935,
+  "mean_confidence": 0.6561031802120141,
+  "ms_per_row": 11.597368595405579,
+  "threads": 4,
+  "rules_fired": 6,
+  "model_dir": "/Volumes/Data/Workspace/FourKites/candidate_package (3)/foursight-intent-classifier/models/final"
+}

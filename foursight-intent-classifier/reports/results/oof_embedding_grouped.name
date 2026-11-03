@@ -1,0 +1,1 @@
+emb[multilingual-e5-small]+logreg(C=4.0,cw=balanced)

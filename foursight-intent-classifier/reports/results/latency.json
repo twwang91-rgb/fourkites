@@ -1,0 +1,32 @@
+{
+ "microsoft/deberta-v3-small": {
+  "cpu_ms_per_row_batched": 10.396430726147432,
+  "cpu_ms_per_question_single": 50.46985749999294,
+  "fp32_size_mb": 567.60118,
+  "threads": 4
+ },
+ "BAAI/bge-small-en-v1.5": {
+  "cpu_ms_per_row_batched": 4.093874779151237,
+  "cpu_ms_per_question_single": 16.923184160004894,
+  "fp32_size_mb": 133.45078,
+  "threads": 4
+ },
+ "intfloat/multilingual-e5-small": {
+  "cpu_ms_per_row_batched": 5.020414531801845,
+  "cpu_ms_per_question_single": 19.24583166000957,
+  "fp32_size_mb": 470.62582,
+  "threads": 4
+ },
+ "FacebookAI/roberta-base": {
+  "cpu_ms_per_row_batched": 11.132946775617874,
+  "cpu_ms_per_question_single": 56.55048665999857,
+  "fp32_size_mb": 498.60406,
+  "threads": 4
+ },
+ "distilbert/distilbert-base-uncased": {
+  "cpu_ms_per_row_batched": 5.311526869258795,
+  "cpu_ms_per_question_single": 33.49373416000162,
+  "fp32_size_mb": 267.83542,
+  "threads": 4
+ }
+}

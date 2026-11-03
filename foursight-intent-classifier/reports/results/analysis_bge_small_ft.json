@@ -1,0 +1,1079 @@
+{
+  "name": "bge_small_ft",
+  "protocol": "grouped",
+  "scores": {
+    "n": 1904,
+    "accuracy": 0.7274159663865546,
+    "macro_f1": 0.5809118042873319,
+    "macro_precision": 0.6111343816116283,
+    "macro_recall": 0.5732295047997235,
+    "weighted_f1": 0.7178027664320511,
+    "OVERALL": 0.639513469127021,
+    "per_class": {
+      "shipment_information": {
+        "precision": 0.3765182186234818,
+        "recall": 0.36328125,
+        "f1": 0.3697813121272366,
+        "support": 256
+      },
+      "realtime_query": {
+        "precision": 0.7598097502972652,
+        "recall": 0.8171355498721228,
+        "f1": 0.7874306839186692,
+        "support": 782
+      },
+      "analytics": {
+        "precision": 0.6506024096385542,
+        "recall": 0.6303501945525292,
+        "f1": 0.6403162055335968,
+        "support": 257
+      },
+      "disruptions": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5357142857142857,
+        "f1": 0.6122448979591837,
+        "support": 28
+      },
+      "chitchat": {
+        "precision": 0.631578947368421,
+        "recall": 0.7058823529411765,
+        "f1": 0.6666666666666667,
+        "support": 17
+      },
+      "knowledge_base": {
+        "precision": 0.8951456310679612,
+        "recall": 0.9056974459724951,
+        "f1": 0.9003906250000001,
+        "support": 509
+      },
+      "other": {
+        "precision": 0.25,
+        "recall": 0.05454545454545454,
+        "f1": 0.08955223880597014,
+        "support": 55
+      }
+    },
+    "confusion": {
+      "shipment_information": {
+        "realtime_query": 135,
+        "knowledge_base": 7,
+        "shipment_information": 93,
+        "analytics": 16,
+        "chitchat": 1,
+        "other": 2,
+        "disruptions": 2
+      },
+      "realtime_query": {
+        "realtime_query": 639,
+        "shipment_information": 89,
+        "analytics": 40,
+        "chitchat": 4,
+        "knowledge_base": 5,
+        "disruptions": 3,
+        "other": 2
+      },
+      "analytics": {
+        "realtime_query": 45,
+        "analytics": 162,
+        "knowledge_base": 21,
+        "shipment_information": 28,
+        "other": 1
+      },
+      "disruptions": {
+        "disruptions": 15,
+        "shipment_information": 5,
+        "analytics": 5,
+        "realtime_query": 3
+      },
+      "chitchat": {
+        "chitchat": 12,
+        "analytics": 1,
+        "other": 1,
+        "shipment_information": 2,
+        "realtime_query": 1
+      },
+      "knowledge_base": {
+        "knowledge_base": 461,
+        "analytics": 17,
+        "shipment_information": 18,
+        "other": 3,
+        "chitchat": 1,
+        "realtime_query": 9
+      },
+      "other": {
+        "realtime_query": 9,
+        "knowledge_base": 21,
+        "shipment_information": 12,
+        "analytics": 8,
+        "disruptions": 1,
+        "other": 3,
+        "chitchat": 1
+      }
+    },
+    "confused_pairs": [
+      [
+        135,
+        "shipment_information",
+        "realtime_query"
+      ],
+      [
+        89,
+        "realtime_query",
+        "shipment_information"
+      ],
+      [
+        45,
+        "analytics",
+        "realtime_query"
+      ],
+      [
+        40,
+        "realtime_query",
+        "analytics"
+      ],
+      [
+        28,
+        "analytics",
+        "shipment_information"
+      ],
+      [
+        21,
+        "other",
+        "knowledge_base"
+      ],
+      [
+        21,
+        "analytics",
+        "knowledge_base"
+      ],
+      [
+        18,
+        "knowledge_base",
+        "shipment_information"
+      ],
+      [
+        17,
+        "knowledge_base",
+        "analytics"
+      ],
+      [
+        16,
+        "shipment_information",
+        "analytics"
+      ],
+      [
+        12,
+        "other",
+        "shipment_information"
+      ],
+      [
+        9,
+        "other",
+        "realtime_query"
+      ],
+      [
+        9,
+        "knowledge_base",
+        "realtime_query"
+      ],
+      [
+        8,
+        "other",
+        "analytics"
+      ],
+      [
+        7,
+        "shipment_information",
+        "knowledge_base"
+      ],
+      [
+        5,
+        "realtime_query",
+        "knowledge_base"
+      ],
+      [
+        5,
+        "disruptions",
+        "shipment_information"
+      ],
+      [
+        5,
+        "disruptions",
+        "analytics"
+      ],
+      [
+        4,
+        "realtime_query",
+        "chitchat"
+      ],
+      [
+        3,
+        "realtime_query",
+        "disruptions"
+      ],
+      [
+        3,
+        "knowledge_base",
+        "other"
+      ],
+      [
+        3,
+        "disruptions",
+        "realtime_query"
+      ],
+      [
+        2,
+        "shipment_information",
+        "other"
+      ],
+      [
+        2,
+        "shipment_information",
+        "disruptions"
+      ],
+      [
+        2,
+        "realtime_query",
+        "other"
+      ],
+      [
+        2,
+        "chitchat",
+        "shipment_information"
+      ],
+      [
+        1,
+        "shipment_information",
+        "chitchat"
+      ],
+      [
+        1,
+        "other",
+        "disruptions"
+      ],
+      [
+        1,
+        "other",
+        "chitchat"
+      ],
+      [
+        1,
+        "knowledge_base",
+        "chitchat"
+      ],
+      [
+        1,
+        "chitchat",
+        "realtime_query"
+      ],
+      [
+        1,
+        "chitchat",
+        "other"
+      ],
+      [
+        1,
+        "chitchat",
+        "analytics"
+      ],
+      [
+        1,
+        "analytics",
+        "other"
+      ]
+    ],
+    "invalid_predictions": 0
+  },
+  "triad_errors": {
+    "shipment_information->realtime_query": 135,
+    "realtime_query->shipment_information": 89,
+    "analytics->realtime_query": 45,
+    "realtime_query->analytics": 40,
+    "analytics->shipment_information": 28,
+    "shipment_information->analytics": 16,
+    "total_triad_errors": 353
+  },
+  "calibration": {
+    "fitted_on_all_oof": {
+      "temperature": 1.0385117722006563,
+      "raw": {
+        "ece": 0.040647857858218034,
+        "nll": 0.8459935402803536,
+        "brier": 0.40438044444565463,
+        "mean_confidence": 0.7548661398465266
+      },
+      "calibrated": {
+        "ece": 0.027607014862943056,
+        "nll": 0.8451353960269091,
+        "brier": 0.40326595053867564,
+        "mean_confidence": 0.7410489012815924
+      },
+      "accuracy": 0.7274159663865546
+    },
+    "cross_fitted_ece": 0.02613646922646644,
+    "per_fold": [
+      {
+        "fold": 0,
+        "temperature": 1.033623990719654,
+        "threshold": 0.5718
+      },
+      {
+        "fold": 1,
+        "temperature": 1.0197595111300382,
+        "threshold": 0.5868
+      },
+      {
+        "fold": 2,
+        "temperature": 0.9995431630336558,
+        "threshold": 0.578
+      },
+      {
+        "fold": 3,
+        "temperature": 1.0597880455780389,
+        "threshold": 0.6122
+      },
+      {
+        "fold": 4,
+        "temperature": 1.0783422761125228,
+        "threshold": 0.5946
+      }
+    ]
+  },
+  "review": {
+    "metric": "confidence",
+    "max_flag_rate": 0.2,
+    "deployment_policy": {
+      "metric": "confidence",
+      "threshold": 0.5907,
+      "flag_rate": 0.19957983193277312,
+      "error_recall": 0.3872832369942196,
+      "precision": 0.5289473684210526,
+      "accuracy_retained": 0.7913385826771654,
+      "n_flagged": 380,
+      "n_errors_flagged": 201
+    },
+    "cross_fitted": {
+      "flag_rate": 0.20063025210084034,
+      "error_recall": 0.3815028901734104,
+      "precision": 0.518324607329843,
+      "accuracy_retained": 0.7890932982917214,
+      "n_flagged": 382,
+      "n_errors_flagged": 198
+    },
+    "OVERALL_on_unflagged_cross_fitted": 0.6058669368615337,
+    "accuracy_on_unflagged_cross_fitted": 0.7890932982917214,
+    "threshold_sweep": [
+      {
+        "metric": "confidence",
+        "threshold": 0.3,
+        "flag_rate": 0.01365546218487395,
+        "error_recall": 0.03468208092485549,
+        "precision": 0.6923076923076923,
+        "accuracy_retained": 0.7332268370607029,
+        "n_flagged": 26,
+        "n_errors_flagged": 18
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.35,
+        "flag_rate": 0.025735294117647058,
+        "error_recall": 0.055876685934489405,
+        "precision": 0.5918367346938775,
+        "accuracy_retained": 0.7358490566037735,
+        "n_flagged": 49,
+        "n_errors_flagged": 29
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.39999999999999997,
+        "flag_rate": 0.04201680672268908,
+        "error_recall": 0.08670520231213873,
+        "precision": 0.5625,
+        "accuracy_retained": 0.7401315789473685,
+        "n_flagged": 80,
+        "n_errors_flagged": 45
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.44999999999999996,
+        "flag_rate": 0.07352941176470588,
+        "error_recall": 0.14836223506743737,
+        "precision": 0.55,
+        "accuracy_retained": 0.7494331065759637,
+        "n_flagged": 140,
+        "n_errors_flagged": 77
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.5,
+        "flag_rate": 0.125,
+        "error_recall": 0.26011560693641617,
+        "precision": 0.5672268907563025,
+        "accuracy_retained": 0.7695078031212484,
+        "n_flagged": 238,
+        "n_errors_flagged": 135
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.5499999999999999,
+        "flag_rate": 0.17069327731092437,
+        "error_recall": 0.3448940269749518,
+        "precision": 0.5507692307692308,
+        "accuracy_retained": 0.7846738442051931,
+        "n_flagged": 325,
+        "n_errors_flagged": 179
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.6,
+        "flag_rate": 0.20588235294117646,
+        "error_recall": 0.4007707129094412,
+        "precision": 0.5306122448979592,
+        "accuracy_retained": 0.7943121693121693,
+        "n_flagged": 392,
+        "n_errors_flagged": 208
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.6499999999999999,
+        "flag_rate": 0.2510504201680672,
+        "error_recall": 0.47591522157996147,
+        "precision": 0.5167364016736402,
+        "accuracy_retained": 0.8092566619915849,
+        "n_flagged": 478,
+        "n_errors_flagged": 247
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.7,
+        "flag_rate": 0.30619747899159666,
+        "error_recall": 0.5703275529865125,
+        "precision": 0.5077186963979416,
+        "accuracy_retained": 0.8311884935654807,
+        "n_flagged": 583,
+        "n_errors_flagged": 296
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.75,
+        "flag_rate": 0.38130252100840334,
+        "error_recall": 0.6724470134874759,
+        "precision": 0.4807162534435262,
+        "accuracy_retained": 0.8556876061120543,
+        "n_flagged": 726,
+        "n_errors_flagged": 349
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.7999999999999999,
+        "flag_rate": 0.5252100840336135,
+        "error_recall": 0.7803468208092486,
+        "precision": 0.405,
+        "accuracy_retained": 0.8738938053097345,
+        "n_flagged": 1000,
+        "n_errors_flagged": 405
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.8499999999999999,
+        "flag_rate": 0.6060924369747899,
+        "error_recall": 0.8477842003853564,
+        "precision": 0.38128249566724437,
+        "accuracy_retained": 0.8946666666666667,
+        "n_flagged": 1154,
+        "n_errors_flagged": 440
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.8999999999999999,
+        "flag_rate": 0.9138655462184874,
+        "error_recall": 0.9865125240847784,
+        "precision": 0.2942528735632184,
+        "accuracy_retained": 0.9573170731707317,
+        "n_flagged": 1740,
+        "n_errors_flagged": 512
+      },
+      {
+        "metric": "confidence",
+        "threshold": 0.95,
+        "flag_rate": 1.0,
+        "error_recall": 1.0,
+        "precision": 0.27258403361344535,
+        "accuracy_retained": NaN,
+        "n_flagged": 1904,
+        "n_errors_flagged": 519
+      }
+    ],
+    "risk_coverage": {
+      "aurc": 0.13926208964634107,
+      "full_risk": 0.27258403361344535
+    }
+  },
+  "confidence": {
+    "mean_conf_correct": 0.7785205225769863,
+    "mean_conf_wrong": 0.6410523781715337,
+    "errors_with_conf_ge_0.9": 7,
+    "n_errors": 519,
+    "margin_mean_correct": 0.6618163582124509,
+    "margin_mean_wrong": 0.44843816537445885
+  },
+  "rule_ablation": {
+    "baseline_OVERALL": 0.639513469127021,
+    "sweep": [
+      {
+        "max_conf": 0.0,
+        "rows_eligible": 0,
+        "rows_changed": 0,
+        "fixed": 0,
+        "broke": 0,
+        "accuracy": 0.7274159663865546,
+        "macro_f1": 0.5809118042873319,
+        "OVERALL": 0.639513469127021,
+        "per_class_f1": {
+          "shipment_information": 0.3697813121272366,
+          "realtime_query": 0.7874306839186692,
+          "analytics": 0.6403162055335968,
+          "disruptions": 0.6122448979591837,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9003906250000001,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 353,
+        "rules_fired": {}
+      },
+      {
+        "max_conf": 0.5,
+        "rows_eligible": 238,
+        "rows_changed": 12,
+        "fixed": 5,
+        "broke": 6,
+        "accuracy": 0.726890756302521,
+        "macro_f1": 0.589068172101914,
+        "OVERALL": 0.6441972057821568,
+        "per_class_f1": {
+          "shipment_information": 0.358148893360161,
+          "realtime_query": 0.7842655193607867,
+          "analytics": 0.6441351888667991,
+          "disruptions": 0.6792452830188679,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9014634146341465,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 357,
+        "rules_fired": {
+          "bare_reference": 8,
+          "how_to_product": 1,
+          "disruption_vocabulary": 4,
+          "past_aggregate": 2,
+          "greeting_or_thanks": 2
+        }
+      },
+      {
+        "max_conf": 0.6,
+        "rows_eligible": 392,
+        "rows_changed": 12,
+        "fixed": 5,
+        "broke": 6,
+        "accuracy": 0.726890756302521,
+        "macro_f1": 0.589068172101914,
+        "OVERALL": 0.6441972057821568,
+        "per_class_f1": {
+          "shipment_information": 0.358148893360161,
+          "realtime_query": 0.7842655193607867,
+          "analytics": 0.6441351888667991,
+          "disruptions": 0.6792452830188679,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9014634146341465,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 357,
+        "rules_fired": {
+          "bare_reference": 18,
+          "greeting_or_thanks": 8,
+          "how_to_product": 6,
+          "disruption_vocabulary": 5,
+          "past_aggregate": 2
+        }
+      },
+      {
+        "max_conf": 0.7,
+        "rows_eligible": 583,
+        "rows_changed": 12,
+        "fixed": 5,
+        "broke": 6,
+        "accuracy": 0.726890756302521,
+        "macro_f1": 0.589068172101914,
+        "OVERALL": 0.6441972057821568,
+        "per_class_f1": {
+          "shipment_information": 0.358148893360161,
+          "realtime_query": 0.7842655193607867,
+          "analytics": 0.6441351888667991,
+          "disruptions": 0.6792452830188679,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9014634146341465,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 357,
+        "rules_fired": {
+          "bare_reference": 35,
+          "greeting_or_thanks": 8,
+          "how_to_product": 9,
+          "disruption_vocabulary": 5,
+          "past_aggregate": 2
+        }
+      },
+      {
+        "max_conf": 0.8,
+        "rows_eligible": 1000,
+        "rows_changed": 12,
+        "fixed": 5,
+        "broke": 6,
+        "accuracy": 0.726890756302521,
+        "macro_f1": 0.589068172101914,
+        "OVERALL": 0.6441972057821568,
+        "per_class_f1": {
+          "shipment_information": 0.358148893360161,
+          "realtime_query": 0.7842655193607867,
+          "analytics": 0.6441351888667991,
+          "disruptions": 0.6792452830188679,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9014634146341465,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 357,
+        "rules_fired": {
+          "bare_reference": 101,
+          "how_to_product": 11,
+          "greeting_or_thanks": 8,
+          "disruption_vocabulary": 6,
+          "past_aggregate": 3
+        }
+      },
+      {
+        "max_conf": 1.01,
+        "rows_eligible": 1904,
+        "rows_changed": 12,
+        "fixed": 5,
+        "broke": 6,
+        "accuracy": 0.726890756302521,
+        "macro_f1": 0.589068172101914,
+        "OVERALL": 0.6441972057821568,
+        "per_class_f1": {
+          "shipment_information": 0.358148893360161,
+          "realtime_query": 0.7842655193607867,
+          "analytics": 0.6441351888667991,
+          "disruptions": 0.6792452830188679,
+          "chitchat": 0.6666666666666667,
+          "knowledge_base": 0.9014634146341465,
+          "other": 0.08955223880597014
+        },
+        "triad_errors": 357,
+        "rules_fired": {
+          "bare_reference": 149,
+          "how_to_product": 15,
+          "greeting_or_thanks": 8,
+          "disruption_vocabulary": 6,
+          "past_aggregate": 3
+        }
+      }
+    ]
+  },
+  "errors": {
+    "n_errors": 519,
+    "categories": {
+      "chitchat boundary": {
+        "count": 7,
+        "mean_confidence": 0.38018473781343526,
+        "examples": [
+          {
+            "text": "que es lo que puedes hacer?",
+            "gold": "chitchat",
+            "pred": "shipment_information",
+            "confidence": 0.49417583164736334
+          },
+          {
+            "text": "que es lo que puedes hacer?",
+            "gold": "chitchat",
+            "pred": "shipment_information",
+            "confidence": 0.49417583164736334
+          },
+          {
+            "text": "Hello You are my supply chain analyst who is dealing with very complex supply chain from north america to phil",
+            "gold": "chitchat",
+            "pred": "analytics",
+            "confidence": 0.3976985554029366
+          },
+          {
+            "text": "¿Me puedes decir que envíos de los que vienen dirigidos a México vienen tarde?",
+            "gold": "realtime_query",
+            "pred": "chitchat",
+            "confidence": 0.3729748800129127
+          },
+          {
+            "text": "ya do that",
+            "gold": "realtime_query",
+            "pred": "chitchat",
+            "confidence": 0.32722389346152686
+          },
+          {
+            "text": "Put your response in a format that can be copied and shared",
+            "gold": "realtime_query",
+            "pred": "chitchat",
+            "confidence": 0.30494779375085884
+          },
+          {
+            "text": "okay what u find",
+            "gold": "realtime_query",
+            "pred": "chitchat",
+            "confidence": 0.2700963787710853
+          }
+        ]
+      },
+      "disruptions boundary": {
+        "count": 15,
+        "mean_confidence": 0.4855745470686616,
+        "examples": [
+          {
+            "text": "the route of BS20260723-1235 have montain regions with curves?",
+            "gold": "disruptions",
+            "pred": "realtime_query",
+            "confidence": 0.8797979839062037
+          },
+          {
+            "text": "me refiero solo al BS20260723-1235. Tiene o pasara poe algun punto de riesgo?",
+            "gold": "disruptions",
+            "pred": "realtime_query",
+            "confidence": 0.8428629651127214
+          },
+          {
+            "text": "What is the current port condition at Shanghai port",
+            "gold": "disruptions",
+            "pred": "shipment_information",
+            "confidence": 0.5773032752250846
+          },
+          {
+            "text": "Can you show me all of our containers that will experience delays due to having to go around the Panama Canal",
+            "gold": "disruptions",
+            "pred": "shipment_information",
+            "confidence": 0.5246486441265372
+          },
+          {
+            "text": "What is the wait time for carriers crossing the World Trade Bridge in Laredo?",
+            "gold": "disruptions",
+            "pred": "realtime_query",
+            "confidence": 0.48866840258672384
+          },
+          {
+            "text": "existe algun peligro reportado en toda la ruta?",
+            "gold": "disruptions",
+            "pred": "analytics",
+            "confidence": 0.48853069594760273
+          },
+          {
+            "text": "existe algun peligro reportado en toda la ruta?",
+            "gold": "disruptions",
+            "pred": "analytics",
+            "confidence": 0.48853069594760273
+          },
+          {
+            "text": "provide summary of plant wise, shipments impacted by dolpin",
+            "gold": "disruptions",
+            "pred": "analytics",
+            "confidence": 0.4407166549653155
+          }
+        ]
+      },
+      "knowledge_base vs operational": {
+        "count": 99,
+        "mean_confidence": 0.6672522917422343,
+        "examples": [
+          {
+            "text": "find where the \"expedite\" flag/field is located on the load details screen in the UI?",
+            "gold": "analytics",
+            "pred": "knowledge_base",
+            "confidence": 0.9081492484911565
+          },
+          {
+            "text": "how to check all ther trailer to store 3024",
+            "gold": "analytics",
+            "pred": "knowledge_base",
+            "confidence": 0.9061252022639705
+          },
+          {
+            "text": "how to send the link",
+            "gold": "other",
+            "pred": "knowledge_base",
+            "confidence": 0.9035599283575126
+          },
+          {
+            "text": "is Fourkites using Grapphopper? to get geolocations?",
+            "gold": "other",
+            "pred": "knowledge_base",
+            "confidence": 0.902052025678443
+          },
+          {
+            "text": "is there a way to see which set up we have with each carrier in fourkites, if eld or phone number",
+            "gold": "analytics",
+            "pred": "knowledge_base",
+            "confidence": 0.90104030610758
+          },
+          {
+            "text": "how I can get all containers in transit ETA MVD?",
+            "gold": "analytics",
+            "pred": "knowledge_base",
+            "confidence": 0.9009162905407734
+          },
+          {
+            "text": "how can I connect you to a powerBI report from where you can read shipment data",
+            "gold": "other",
+            "pred": "knowledge_base",
+            "confidence": 0.9007486635076035
+          },
+          {
+            "text": "why was this marked supertracked",
+            "gold": "realtime_query",
+            "pred": "knowledge_base",
+            "confidence": 0.8996941978679465
+          }
+        ]
+      },
+      "other / out-of-scope boundary": {
+        "count": 26,
+        "mean_confidence": 0.5749872639330331,
+        "examples": [
+          {
+            "text": "CMA BEX. Is there any benchmark on transit time?",
+            "gold": "other",
+            "pred": "analytics",
+            "confidence": 0.8679062859917426
+          },
+          {
+            "text": "there is a existing powerBI data set I want you to read that powerBI",
+            "gold": "other",
+            "pred": "analytics",
+            "confidence": 0.8588950290582662
+          },
+          {
+            "text": "put results in word doc",
+            "gold": "other",
+            "pred": "analytics",
+            "confidence": 0.7843654826474667
+          },
+          {
+            "text": "purchasing document status-PO 4507153487",
+            "gold": "other",
+            "pred": "realtime_query",
+            "confidence": 0.780352945086497
+          },
+          {
+            "text": "purchasing document status - 4507125913",
+            "gold": "other",
+            "pred": "realtime_query",
+            "confidence": 0.7790306057711561
+          },
+          {
+            "text": "Pickup and delivery number to use for this will be N1091681",
+            "gold": "other",
+            "pred": "realtime_query",
+            "confidence": 0.7724028198227143
+          },
+          {
+            "text": "list coorspoding sn for these pos 0108596326 0107628575 0108834446 0108842669 0108596790 0108841590 0107460504",
+            "gold": "other",
+            "pred": "realtime_query",
+            "confidence": 0.7716925433990707
+          },
+          {
+            "text": "Make the pass by pass in english",
+            "gold": "other",
+            "pred": "shipment_information",
+            "confidence": 0.7661073334759883
+          }
+        ]
+      },
+      "short/underspecified": {
+        "count": 73,
+        "mean_confidence": 0.5911064668307564,
+        "examples": [
+          {
+            "text": "0034835176",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8846634251749194
+          },
+          {
+            "text": "20260901",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8769734085849834
+          },
+          {
+            "text": "56910268",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8661121432452126
+          },
+          {
+            "text": "Carrier management",
+            "gold": "analytics",
+            "pred": "knowledge_base",
+            "confidence": 0.8247312269303261
+          },
+          {
+            "text": "TRHU5135923",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8174001737923219
+          },
+          {
+            "text": "120118269",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8119652547439358
+          },
+          {
+            "text": "SOU1001410653",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8026515230738586
+          },
+          {
+            "text": "scheduled",
+            "gold": "realtime_query",
+            "pred": "shipment_information",
+            "confidence": 0.7741480067458061
+          }
+        ]
+      },
+      "triad: semantic": {
+        "count": 262,
+        "mean_confidence": 0.6616940631928214,
+        "examples": [
+          {
+            "text": "Show me only delivered loads from 2026/1/1 to now",
+            "gold": "analytics",
+            "pred": "realtime_query",
+            "confidence": 0.8851877467305466
+          },
+          {
+            "text": "Following 1531002 1531001 1531324",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8850178370024431
+          },
+          {
+            "text": "IS THERE A DELIVERY TODAY BY A TRAILER WITH THE DIGITS 1159",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8834636132852941
+          },
+          {
+            "text": "truck number 208398576-249",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8829359987374654
+          },
+          {
+            "text": "Can you show me the shipments from 1197 on 08/06/2026?",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.882085602191907
+          },
+          {
+            "text": "Can you show me all of the shipments I have listed for Jan 30 2026?",
+            "gold": "analytics",
+            "pred": "realtime_query",
+            "confidence": 0.8811921553373432
+          },
+          {
+            "text": "Can you show me all of the shipments I have listed for Jan 30 2026?",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8811921553373432
+          },
+          {
+            "text": "which carriers has the most loads late today",
+            "gold": "analytics",
+            "pred": "realtime_query",
+            "confidence": 0.8799946535700899
+          }
+        ]
+      },
+      "triad: temporal/aggregate cue": {
+        "count": 37,
+        "mean_confidence": 0.6821354194702044,
+        "examples": [
+          {
+            "text": "I want to see last month, TL, source from hazelton, geodis nashville and sparks. Just give me FourKites status",
+            "gold": "realtime_query",
+            "pred": "analytics",
+            "confidence": 0.8798668588476493
+          },
+          {
+            "text": "what deliveries are behind schedule for delivery tomorrow in Newnan GA, Hazleton PA and Marshall MO? also summ",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8725314399436859
+          },
+          {
+            "text": "last 30 days",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8696334645606325
+          },
+          {
+            "text": "How many missed deliveries have we had for the locations Butner, Maulden, Elloree and Dunn in the past 30 days",
+            "gold": "realtime_query",
+            "pred": "analytics",
+            "confidence": 0.8654980349153543
+          },
+          {
+            "text": "show me all departures for carrier DLS in the past 7 days",
+            "gold": "shipment_information",
+            "pred": "analytics",
+            "confidence": 0.864797501732074
+          },
+          {
+            "text": "show me all shipments in spain which were late in the last three months",
+            "gold": "analytics",
+            "pred": "realtime_query",
+            "confidence": 0.861113202236549
+          },
+          {
+            "text": "how many tl moves took place yesterday?",
+            "gold": "shipment_information",
+            "pred": "analytics",
+            "confidence": 0.8608611335282275
+          },
+          {
+            "text": "can you show me all deliveries to piggly wiggly since 01/01/2026?",
+            "gold": "shipment_information",
+            "pred": "realtime_query",
+            "confidence": 0.8603359673779353
+          }
+        ]
+      }
+    },
+    "mean_conf_correct": 0.7785205225769863,
+    "mean_conf_wrong": 0.6410523781715337,
+    "high_conf_errors_ge_0.9": 7,
+    "rare_class_recall": {
+      "disruptions": 0.5357142857142857,
+      "chitchat": 0.7058823529411765,
+      "other": 0.05454545454545454
+    },
+    "short_questions": {
+      "n": 204,
+      "accuracy": 0.6421568627450981
+    },
+    "long_questions_gt_64_words": {
+      "n": 26,
+      "accuracy": 0.46153846153846156
+    },
+    "conflicting_duplicate_rows": {
+      "n": 81,
+      "accuracy": 0.38271604938271603,
+      "share_of_all_errors": 0.09633911368015415
+    }
+  }
+}

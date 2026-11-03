@@ -1,0 +1,361 @@
+{
+  "name": "ensemble_top2",
+  "kind": "ensemble",
+  "members": [
+    "deberta_v3_small",
+    "bge_small_ft"
+  ],
+  "protocol": "grouped",
+  "folds_run": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows_evaluated": 1904,
+  "config": {
+    "model_name": "ensemble: deberta_v3_small + bge_small_ft",
+    "max_length": 128,
+    "tail_tokens": 16,
+    "batch_size": 16,
+    "eval_batch_size": 64,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_epochs": 8,
+    "patience": 2,
+    "grad_clip": 1.0,
+    "class_weight": "sqrt_inv",
+    "label_smoothing": 0.0,
+    "seed": 42,
+    "device": "mps",
+    "num_threads": null,
+    "fixed_epochs": null
+  },
+  "member_configs": {
+    "deberta_v3_small": {
+      "model_name": "microsoft/deberta-v3-small",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    },
+    "bge_small_ft": {
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "max_length": 128,
+      "tail_tokens": 16,
+      "batch_size": 16,
+      "eval_batch_size": 64,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "max_epochs": 8,
+      "patience": 2,
+      "grad_clip": 1.0,
+      "class_weight": "sqrt_inv",
+      "label_smoothing": 0.0,
+      "seed": 42,
+      "device": "mps",
+      "num_threads": null,
+      "fixed_epochs": null
+    }
+  },
+  "accuracy_oof": 0.7258403361344538,
+  "macro_f1_oof": 0.6058970351813481,
+  "OVERALL_oof": 0.6538743555625903,
+  "OVERALL_fold_mean": 0.6499909428031809,
+  "OVERALL_fold_std": 0.022500867431000174,
+  "per_class": {
+    "shipment_information": {
+      "precision": 0.36,
+      "recall": 0.28125,
+      "f1": 0.3157894736842105,
+      "support": 256
+    },
+    "realtime_query": {
+      "precision": 0.7351290684624018,
+      "recall": 0.8375959079283888,
+      "f1": 0.7830245068738794,
+      "support": 782
+    },
+    "analytics": {
+      "precision": 0.6816143497757847,
+      "recall": 0.5914396887159533,
+      "f1": 0.6333333333333334,
+      "support": 257
+    },
+    "disruptions": {
+      "precision": 0.8,
+      "recall": 0.7142857142857143,
+      "f1": 0.7547169811320756,
+      "support": 28
+    },
+    "chitchat": {
+      "precision": 0.7777777777777778,
+      "recall": 0.8235294117647058,
+      "f1": 0.7999999999999999,
+      "support": 17
+    },
+    "knowledge_base": {
+      "precision": 0.879472693032015,
+      "recall": 0.9174852652259332,
+      "f1": 0.8980769230769231,
+      "support": 509
+    },
+    "other": {
+      "precision": 0.125,
+      "recall": 0.03636363636363636,
+      "f1": 0.05633802816901408,
+      "support": 55
+    }
+  },
+  "confusion": {
+    "shipment_information": {
+      "realtime_query": 153,
+      "analytics": 17,
+      "knowledge_base": 10,
+      "shipment_information": 72,
+      "chitchat": 1,
+      "disruptions": 1,
+      "other": 2
+    },
+    "realtime_query": {
+      "realtime_query": 655,
+      "shipment_information": 78,
+      "analytics": 36,
+      "other": 2,
+      "chitchat": 1,
+      "knowledge_base": 8,
+      "disruptions": 2
+    },
+    "analytics": {
+      "realtime_query": 61,
+      "analytics": 152,
+      "knowledge_base": 23,
+      "shipment_information": 18,
+      "other": 2,
+      "disruptions": 1
+    },
+    "disruptions": {
+      "disruptions": 20,
+      "shipment_information": 4,
+      "analytics": 2,
+      "realtime_query": 2
+    },
+    "chitchat": {
+      "other": 2,
+      "chitchat": 14,
+      "analytics": 1
+    },
+    "knowledge_base": {
+      "knowledge_base": 467,
+      "analytics": 12,
+      "other": 6,
+      "shipment_information": 12,
+      "realtime_query": 11,
+      "chitchat": 1
+    },
+    "other": {
+      "realtime_query": 9,
+      "knowledge_base": 23,
+      "shipment_information": 16,
+      "analytics": 3,
+      "disruptions": 1,
+      "chitchat": 1,
+      "other": 2
+    }
+  },
+  "confused_pairs": [
+    [
+      153,
+      "shipment_information",
+      "realtime_query"
+    ],
+    [
+      78,
+      "realtime_query",
+      "shipment_information"
+    ],
+    [
+      61,
+      "analytics",
+      "realtime_query"
+    ],
+    [
+      36,
+      "realtime_query",
+      "analytics"
+    ],
+    [
+      23,
+      "other",
+      "knowledge_base"
+    ],
+    [
+      23,
+      "analytics",
+      "knowledge_base"
+    ],
+    [
+      18,
+      "analytics",
+      "shipment_information"
+    ],
+    [
+      17,
+      "shipment_information",
+      "analytics"
+    ],
+    [
+      16,
+      "other",
+      "shipment_information"
+    ],
+    [
+      12,
+      "knowledge_base",
+      "shipment_information"
+    ],
+    [
+      12,
+      "knowledge_base",
+      "analytics"
+    ],
+    [
+      11,
+      "knowledge_base",
+      "realtime_query"
+    ]
+  ],
+  "triad_errors": {
+    "shipment_information->realtime_query": 153,
+    "realtime_query->shipment_information": 78,
+    "analytics->realtime_query": 61,
+    "realtime_query->analytics": 36,
+    "analytics->shipment_information": 18,
+    "shipment_information->analytics": 17,
+    "total_triad_errors": 363
+  },
+  "best_epochs": {
+    "deberta_v3_small": [
+      6,
+      3,
+      4,
+      3,
+      3
+    ],
+    "bge_small_ft": [
+      6,
+      6,
+      7,
+      4,
+      4
+    ]
+  },
+  "train_seconds_total": 940.224997080999,
+  "folds": [
+    {
+      "fold": 0,
+      "best_epoch": null,
+      "accuracy": 0.7480314960629921,
+      "macro_f1": 0.6376277925182083,
+      "OVERALL": 0.6817892739361219,
+      "per_class_f1": {
+        "shipment_information": 0.33707865168539325,
+        "realtime_query": 0.793939393939394,
+        "analytics": 0.6666666666666666,
+        "disruptions": 0.7499999999999999,
+        "chitchat": 0.8571428571428571,
+        "knowledge_base": 0.9252336448598131,
+        "other": 0.13333333333333333
+      },
+      "history": [],
+      "train_seconds": 247.40263316699975
+    },
+    {
+      "fold": 1,
+      "best_epoch": null,
+      "accuracy": 0.7068062827225131,
+      "macro_f1": 0.5964110710005149,
+      "OVERALL": 0.6405691556893143,
+      "per_class_f1": {
+        "shipment_information": 0.3168316831683168,
+        "realtime_query": 0.7753846153846153,
+        "analytics": 0.631578947368421,
+        "disruptions": 0.7272727272727272,
+        "chitchat": 0.8571428571428571,
+        "knowledge_base": 0.8666666666666667,
+        "other": 0.0
+      },
+      "history": [],
+      "train_seconds": 176.72829233300035
+    },
+    {
+      "fold": 2,
+      "best_epoch": null,
+      "accuracy": 0.7139107611548556,
+      "macro_f1": 0.6081447418321512,
+      "OVERALL": 0.650451149561233,
+      "per_class_f1": {
+        "shipment_information": 0.35514018691588783,
+        "realtime_query": 0.7668711656441718,
+        "analytics": 0.6105263157894737,
+        "disruptions": 0.4615384615384615,
+        "chitchat": 1.0,
+        "knowledge_base": 0.9090909090909091,
+        "other": 0.15384615384615385
+      },
+      "history": [],
+      "train_seconds": 199.86006641599988
+    },
+    {
+      "fold": 3,
+      "best_epoch": null,
+      "accuracy": 0.7105263157894737,
+      "macro_f1": 0.5502822801058164,
+      "OVERALL": 0.6143798943792793,
+      "per_class_f1": {
+        "shipment_information": 0.08955223880597013,
+        "realtime_query": 0.7704918032786885,
+        "analytics": 0.5977011494252873,
+        "disruptions": 1.0,
+        "chitchat": 0.5,
+        "knowledge_base": 0.8942307692307693,
+        "other": 0.0
+      },
+      "history": [],
+      "train_seconds": 159.44130845699965
+    },
+    {
+      "fold": 4,
+      "best_epoch": null,
+      "accuracy": 0.75,
+      "macro_f1": 0.6046087340832607,
+      "OVERALL": 0.6627652404499564,
+      "per_class_f1": {
+        "shipment_information": 0.4130434782608696,
+        "realtime_query": 0.8098159509202454,
+        "analytics": 0.6538461538461539,
+        "disruptions": 0.888888888888889,
+        "chitchat": 0.5714285714285715,
+        "knowledge_base": 0.8952380952380952,
+        "other": 0.0
+      },
+      "history": [],
+      "train_seconds": 156.7926967079993
+    }
+  ]
+}
